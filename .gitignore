@@ -1,0 +1,13 @@
+# Ignore site build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.bundle/
+
+# Ignore dependency lock files
+Gemfile.lock
+
+# Ignore system or editor-specific files
+*.log
+.DS_Store
+*.swp
