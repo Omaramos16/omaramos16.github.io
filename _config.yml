@@ -6,6 +6,9 @@ logo: /assets/images/omar_ramos_circle.png
 sass:
   style: compressed
 
+include:
+  - assets/css/custom.scss
+
 # Navigation Bar
 nav:
   - title: "Home"
