@@ -1,66 +1,131 @@
+/* MODIFYING THE WIDTH OF THE THEME */
+/* Make the content area wider */
+.wrapper {
+  width: 1100px;   /* Increase the overall width */
+  margin: 0 auto;
+}
+
+/* Adjust the sidebar */
+header {
+  width: 220px;    /* Slightly reduce the sidebar width */
+  float: left;
+  position: fixed;
+  padding-right: 10px; /* Optional spacing */
+}
+
+/* Adjust the content section */
+section {
+  width: 800px;    /* Increase the content width */
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 1000px) {
+  .wrapper {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  header, section {
+    float: none;
+    position: static;
+    width: auto;
+  }
+}
+
+
+
+/* Custom grid for project pages */
 /* Portfolio Grid Layout */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 25px;               /* Space between cards */
+  padding: 30px;
+  justify-items: center;   /* Center the cards */
+  max-width: 900px;        /* Optional: limit the grid width for better layout */
+  margin: 0 auto;          /* Center the grid horizontally */
 }
 
-/* Card Design */
+
+/* ---- CARD LAYOUT ---- */
+/* ---- CARD LAYOUT ---- */
 .project-card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  position: relative;
   overflow: hidden;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 300px;
-  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 350px;               /* Fixed Width for Consistency */
+  height: 300px;              /* Optional: Fixed Height for uniformity */
+  cursor: pointer;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between; /* Ensures even spacing inside the card */
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Image Styling */
+/* ---- IMAGE STYLE ---- */
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 180px;              /* Consistent image height */
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Content Area */
+/* ---- CARD CONTENT ---- */
 .card-content {
   padding: 15px;
+  text-align: center;
+  flex-grow: 1;               /* Ensures content fills remaining space */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  justify-content: center;    /* Vertically centers the content */
 }
 
 .card-content h3 {
   font-size: 1.2em;
-  margin: 0 0 10px;
   color: #333;
+  margin-bottom: 5px;
 }
 
 .card-content p {
   font-size: 0.9em;
   color: #666;
-  line-height: 1.4;
-  flex-grow: 1;
+  opacity: 0.8;
+  margin: 0;                  /* Remove extra space */
 }
 
-/* Link Styling */
-.project-card a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  height: 100%;
+/* ---- HOVER EFFECT ---- */
+.project-card:hover {
+  transform: scale(1.05);     /* Slight hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover img {
+  opacity: 0.3;               /* Faded image on hover */
+  transform: scale(1.05);
+}
+
+/* ---- HIDDEN OVERLAY INFO ---- */
+.overlay-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  color: #000;
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  pointer-events: none;        /* Makes the overlay non-blocking for clicks */
+  width: 90%;                  /* Keep text neatly inside the card */
+}
+
+.project-card:hover .overlay-info {
+  opacity: 1;                  /* Reveal on hover */
 }
