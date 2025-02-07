@@ -15,9 +15,9 @@ Welcome to my portfolio of projects integrating software, embedded systems, and 
   <div class="project-card">
     <a href="me218a-spdl.md">
       <img src="/assets/images/ph.jpg" alt="SPDL Project Thumbnail">
-      <div class="card-content">
+      <div class="overlay">
         <h3>SPDL (ME218A Final Project)</h3>
-        <p>Smart Product Design with embedded systems, sensors, and actuators for real-world applications.</p>
+        <p>Embedded systems, sensors, and actuators for smart product design.</p>
       </div>
     </a>
   </div>
@@ -25,9 +25,9 @@ Welcome to my portfolio of projects integrating software, embedded systems, and 
   <div class="project-card">
     <a href="me218b-nuttin-special.md">
       <img src="/assets/images/ph.jpg" alt="Nuttin' Special Project Thumbnail">
-      <div class="card-content">
+      <div class="overlay">
         <h3>Nuttin’ Special (ME218B Final Project)</h3>
-        <p>Advanced control system with custom PCB design and embedded C/C++ for real-time performance.</p>
+        <p>Advanced control systems with custom PCB and embedded C/C++.</p>
       </div>
     </a>
   </div>
@@ -35,9 +35,9 @@ Welcome to my portfolio of projects integrating software, embedded systems, and 
   <div class="project-card">
     <a href="me218c-mario-boat.md">
       <img src="/assets/images/ph.jpg" alt="Mario Boat Project Thumbnail">
-      <div class="card-content">
-        <h3>Mario Boat Project (ME218C Final Project)</h3>
-        <p>Robotic system controlled via NES controllers, merging embedded software with mechanical design.</p>
+      <div class="overlay">
+        <h3>Mario Boat (ME218C Final Project)</h3>
+        <p>Robotic system controlled via NES controllers and embedded software.</p>
       </div>
     </a>
   </div>

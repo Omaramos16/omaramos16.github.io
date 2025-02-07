@@ -3,11 +3,8 @@ title: Omar Ramos Escoto
 theme: jekyll-theme-minimal
 logo: /assets/images/omar_ramos_circle.png
 
-sass:
-  style: compressed
-
 include:
-  - assets/css/custom.scss
+  - assets/css/custom.css
 
 # Navigation Bar
 nav:
