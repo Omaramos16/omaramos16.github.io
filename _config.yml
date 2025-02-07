@@ -1,5 +1,10 @@
 title: Omar Ramos Escoto
+# description: Smart Product Designer
 theme: jekyll-theme-minimal
+logo: /assets/images/omar_ramos_circle.png
+
+sass:
+  style: compressed
 
 # Navigation Bar
 nav:
