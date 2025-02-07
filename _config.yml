@@ -3,9 +3,6 @@ title: Omar Ramos Escoto
 theme: jekyll-theme-minimal
 logo: /assets/images/omar_ramos_circle.png
 
-sass:
-  style: compressed
-
 # Navigation Bar
 nav:
   - title: "Home"
