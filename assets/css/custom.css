@@ -51,7 +51,6 @@ section {
 
 
 /* ---- CARD LAYOUT ---- */
-/* ---- CARD LAYOUT ---- */
 .project-card {
   position: relative;
   overflow: hidden;
@@ -128,4 +127,41 @@ section {
 
 .project-card:hover .overlay-info {
   opacity: 1;                  /* Reveal on hover */
+}
+
+/* ✅ HOVER EFFECTS ONLY FOR DEVICES THAT SUPPORT HOVER */
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: scale(1.05);     /* Slight hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .project-card:hover img {
+    opacity: 0.3;               /* Faded image on hover */
+    transform: scale(1.05);
+  }
+
+  .project-card:hover .overlay-info {
+    opacity: 1;                 /* Reveal overlay only on hover devices */
+  }
+}
+
+/* Responsive Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;  /* Limits the width of the video */
+  margin: 20px auto;  /* Center horizontally with margin */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+  overflow: hidden;    /* Hide overflow to avoid scrollbars */
+}
+
+/* Style the YouTube iframe */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;  /* Remove any default border */
 }

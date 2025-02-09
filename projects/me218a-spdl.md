@@ -11,8 +11,9 @@ See the full [Project Website here](https://me218a-smartportableelectronicsdesig
 
 ## 🎥 **Demo**
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
 </div>
+
 
 ---
 
@@ -67,8 +68,9 @@ See the full [Project Website here](https://me218a-smartportableelectronicsdesig
 
 - **SPDL in Action:** Demonstrating real-time circuit guidance and component dispensing.  
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
 </div>
+
 
 - **Main Finite State Machine:**  
 ![Main FSM](../assets/images/spdl_main_fsm.png)
