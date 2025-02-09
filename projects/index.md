@@ -19,13 +19,13 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 <div class="project-grid">
   <div class="project-card">
     <a href="./me218a-spdl.html">
-      <img src="/assets/images/ph.jpg" alt="SPDL Project Thumbnail">
+      <img src="/assets/images/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
       <div class="card-content">
-        <h3>SPDL (ME218A)</h3>
-        <p>Embedded Systems | C++ | Sensors</p>
+        <h3>Smart Portable Electronics Design Locker</h3>
+        <p>Embedded Systems | FSMs | SPI Communication</p>
       </div>
       <div class="overlay-info">
-        Interactive smart product design using microcontrollers and real-time data.
+        Smart product automating analog circuit design with dynamic FSMs, SPI communication, and real-time data processing.
       </div>
     </a>
   </div>
