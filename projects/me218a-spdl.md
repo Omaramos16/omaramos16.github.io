@@ -3,64 +3,99 @@ layout: default
 title: ME218A Final Project - SPDL
 ---
 
+## 🚀 **Project Overview**
+
+- **Project Name:** Smart Portable Electronics Design Locker (SPDL)  
+- **Role:** Embedded Systems & Integration Lead
+- **Technologies:** Embedded C/C++, FSMs, SPI, PIC32, KiCad, MPLAB X  
+- **Key Contributions:** FSM Design, SPI Driver Development, System Reliability, Mechanical Design Input  
+- **🎥 Demo:** [Watch Here](https://www.youtube.com/embed/8TC3ehUtTb4) | **[Project Website](https://me218a-smartportableelectronicsdesignlab.weebly.com/)**
+
+---
+
 # [Smart Portable Electronics Design Locker (SPDL)](https://me218a-smartportableelectronicsdesignlab.weebly.com/)
 
-The Smart Portable Electronics Design Locker (SPDL) is a smart product designed to simplify analog circuit design for common applications in mechatronics and signal processing. SPDL automates the creation of eight fundamental circuits, including Op-Amp and comparator configurations. Users select their desired circuit type, input basic parameters, and SPDL handles the rest—calculating required values, displaying detailed schematics, and guiding the user to the exact components needed. This eliminates the need for complex calculations and time-consuming component sourcing, making circuit design more efficient and accessible.
+The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit design for mechatronics and signal processing applications. It automates the creation of eight fundamental circuits—including Op-Amp amplifiers and comparator configurations—by calculating component values, generating schematics, and recommending precise parts based on user-defined parameters. SPDL eliminates complex manual calculations, making circuit design faster and more accessible.
 
-See the full [Project Website here](https://me218a-smartportableelectronicsdesignlab.weebly.com/)!
+---
 
-## 🎥 **Demo**
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
-</div>
+## 🛠️ **Key Technologies & Concepts**  
+- Embedded C/C++  
+- Finite State Machines (FSMs) using UML Design  
+- SPI Communication Protocol Implementation  
+- Analog Sensors & Actuators  
+- Real-Time Interrupt Handling & Event-Driven Programming  
+- Microcontroller Programming (PIC32)  
+- Numerical Stability in Embedded Systems  
+- Signal Denoising & Noise Reduction Techniques  
+- Embedded Systems Architecture & Hardware-Software Co-Design  
+- Power Management in Embedded Devices
+- Low-Level Driver & Peripheral Interface Development
+
+---
+
+## 👤 **My Role & Key Contributions**
+
+- **Embedded Systems & Integration Lead:** Designed modular, event-driven FSMs for robust, real-time system behavior and led system-level integration across hardware and software components.  
+- **SPI Communication & Display Control:** Developed low-level drivers for LED arrays over a single SPI line, optimizing buffer management, synchronization, and data transitions.  
+- **System Reliability:** Engineered robust boot/recovery protocols for resilience against resets and power fluctuations.
+- **Numerical Optimization:** Improved calculation accuracy using fixed-point arithmetic for embedded systems with limited floating-point support.  
+- **Cross-Disciplinary Impact:** Contributed to mechanical design ideation (CD-drive-based dispensing system) and electrical troubleshooting (signal denoising, noise reduction strategies).  
 
 
 ---
 
-## 🛠️ **Key Technologies & Concepts**
-- Embedded C/C++
-- Finite State Machines (FSMs) using UML design
-- SPI Communication Protocol Implementation
-- Analog Sensors & Actuators
-- Real-Time Interrupt Handling
-- Microcontroller Programming (PIC32)
-- Numerical Stability in Embedded Systems
-- Signal Denoising & Noise Reduction Techniques
+## 🚩 **Key Challenges & Solutions**
+
+- **SPI Communication for Multiple Displays:**  
+  - *Challenge:* Managing dynamic content over a single SPI line.  
+  - *Solution:* Optimized buffer control with lookup tables and advanced bit masking, improving data sync and reducing flickering.  
+
+- **Floating-Point Limitations of PIC32:**  
+  - *Challenge:* Inaccurate calculations due to limited floating-point support.  
+  - *Solution:* Implemented fixed-point arithmetic, enhancing computational efficiency and accuracy.  
+
+- **FSM Reset Integrity:**  
+  - *Challenge:* Ensuring reliable resets after timeouts or power cycles.  
+  - *Solution:* Designed robust state-reset protocols, maintaining system stability in real-time conditions.  
+
+- **Mechanical Design for Reliable Dispensing:**  
+  - *Challenge:* Designing a compact, reliable dispensing mechanism with sufficient throw. 
+  - *Solution:* Proposed a lead screw-based system with limit switches, repurposing CD drive components for precision and ease of integration.  
+
+- **Display Noise & Flickering:**  
+  - *Challenge:* Diagnosing and mitigating SPI communication-induced noise.  
+  - *Solution:* Implemented near-source denoising techniques, optimized signal grounding, and reduced interference through improved layout considerations. 
 
 ---
 
-## 👤 **My Role & Contributions**
-- **Software Lead:** Designed and implemented all FSMs, orchestrating seamless system behavior through modular, event-driven code architecture.
-- **SPI Communication & Display Control:** Developed drivers for LED arrays connected via a single SPI line, managing buffers, synchronization, and dynamic/static content transitions using bit masking techniques.
-- **System Reliability:** Implemented safe booting and rebooting mechanisms across all FSMs, ensuring robust recovery from timeouts and unexpected resets.
-- **Numerical Optimization:** Addressed numerical stability challenges for 32-bit float operations, optimizing calculations for resistor and component selection using efficient lookup tables and fixed-point arithmetic.
-- **Electrical Contributions:** Contributed to troubleshooting signal noise issues in SPI communication, identifying sources of display flickering, and proposing denoising strategies close to the data source for improved stability and user experience.
-- **Mechanical Contributions:** Collaborated in brainstorming mechanical solutions, particularly around refining the dispensing mechanism, transitioning from an initial lead screw motor prototype to a more reliable drawer-based design.
+## 🧰 **Technical Stack & Validation**
 
----
+- **Microcontroller Development:** PIC32 with MPLAB X IDE  
+- **Version Control:** Bitbucket & Git  
+- **Hardware Design Tools:** KiCad for schematics, PCB layout  
+- **Signal Analysis Tools:** Oscilloscope & Saleae Logic Analyzer  
+- **Documentation:** Weebly for project website  
+- **Technical References:** Extensive use of PIC32 datasheets/manuals for SPI configuration  
 
-## 🚩 **Challenges & Solutions**
-- **Challenge:** SPI Communication for Multiple Displays: Managing dynamic content over a single SPI line.  
-  - **Solution:** Implemented advanced buffer control, optimized lookup tables, and precise bit masking to synchronize multiple LED displays. Enhanced robustness through fine-tuned baud rate adjustments and error-checking mechanisms.
-
-- **Challenge:** Addressing floating-point limitations of the PIC32 microcontroller.  
-  - **Solution:** Applied principles of numerical stability, utilizing efficient lookup tables and optimized fixed-point arithmetic to ensure accurate, reliable calculations.
-
-- **Challenge:** Ensuring all FSMs reset appropriately after system timeouts.  
-  - **Solution:** Engineered comprehensive state reset protocols, maintaining system integrity and seamless operation across all interacting modules.
-
-- **Challenge:** Display Noise and Flickering Issues.  
-  - **Solution:** Diagnosed noise interference in SPI communication, proposing signal denoising techniques near the data source to stabilize display output and eliminate flickering.
-
-- **Challenge:** Mechanical Design Inefficiencies in the Initial Prototype.  
-  - **Solution:** Contributed to the redesign of the dispensing mechanism, transitioning from a lead screw motor concept to a drawer-based system, improving reliability and ease of assembly.
+**Testing & Validation:**  
+- **Signal Analysis:** Analyzed SPI signals with oscilloscopes and Saleae Logic Analyzer  
+- **FSM Verification:** Verified FSM transitions under real-time conditions  
+- **System Integration Testing:** Conducted end-to-end system validation  
+- **Analog Debugging:** Debugged analog signals for noise issues and stability  
 
 ---
 
 ## 🌟 **Project Highlights**
-- **Architected Robust Embedded Systems:** Designed and implemented complex, modular FSMs with real-time interrupt handling, ensuring seamless integration of hardware and software components.
+- **Architected Robust Embedded Systems:** Designed modular FSMs with real-time interrupt handling for seamless hardware-software integration.
 - **Optimized Data-Driven Hardware Control:** Enhanced SPI communication efficiency and LED display management through advanced buffer control, real-time data synchronization, and noise mitigation strategies.
-- **Cross-Disciplinary Problem Solving:** Provided impactful contributions beyond software, including mechanical design ideation and electrical troubleshooting, showcasing versatility in mechatronics projects.
+- **Cross-Disciplinary Problem Solving:** Contributed to mechanical design ideation and electrical troubleshooting, demonstrating cross-disciplinary versatility in mechatronics.
+
+---
+
+## 💡 **Reflection & Lessons Learned**
+
+Working on SPDL deepened my expertise in embedded systems, particularly FSM design, real-time data processing, and SPI communication. I gained hands-on experience with hardware-software integration, signal debugging, and system reliability. Leading the software architecture reinforced the importance of modular, maintainable code, while my contributions to mechanical and electrical problem-solving highlighted the value of cross-disciplinary thinking in mechatronics.
 
 ---
 
@@ -70,7 +105,6 @@ See the full [Project Website here](https://me218a-smartportableelectronicsdesig
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>
 </div>
-
 
 - **Main Finite State Machine:**  
 ![Main FSM](../assets/images/spdl_main_fsm.png)
@@ -83,11 +117,4 @@ See the full [Project Website here](https://me218a-smartportableelectronicsdesig
 ## 📂 **Project Documentation**
 - 📄 [Project Handout (PDF)](../assets/docs/ME218a_F23_Project_Spec_Rev3.pdf)
 - 🌐 [Project Website](https://me218a-smartportableelectronicsdesignlab.weebly.com/)
-
----
-
-## 💡 **Reflection & Lessons Learned**
-
-Working on SPDL deepened my expertise in embedded systems, particularly in FSM design, real-time data processing, and SPI communication. The project challenged me to consider system-wide stability, from managing hardware interfaces to ensuring numerical accuracy in calculations. Leading the software architecture reinforced the value of modular, maintainable code, while contributing to mechanical and electrical problem-solving highlighted the importance of cross-disciplinary thinking in mechatronics development.
-
----
+- 🔗 [Source Code](https://me218a-smartportableelectronicsdesignlab.weebly.com/software.html)
