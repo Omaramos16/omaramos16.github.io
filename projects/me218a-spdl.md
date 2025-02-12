@@ -10,7 +10,7 @@ title: ME218A Final Project - SPDL
 - **Class:** ME218A: Smart Product Design Fundamentals (Graduate-Level Mechatronics Series)  
 - **Team Size:** 3 members  
 - **Duration:** ~3 weeks  
-- **Key Contributions:** FSM Design, SPI Driver Development, System Reliability, Mechanical Design Input  
+- **Key Contributions:** FSM Design and Software Implementation, SPI Driver Development, System Reliability, Mechanical Design Input  
 - **Documentation:** <a href="https://me218a-smartportableelectronicsdesignlab.weebly.com/" target="_blank" rel="noopener noreferrer">Project Website</a>  
 - **🎥 Demo:**  
 <div class="video-container">  

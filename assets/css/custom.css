@@ -1,54 +1,90 @@
-/* MODIFYING THE WIDTH OF THE THEME */
-/* Make the content area wider */
+/* Custom adjustments to make the layout wider */
+/* Adjust the wrapper to be wider */
 .wrapper {
-  width: 1100px;   /* Increase the overall width */
-  margin: 0 auto;
+  width: 1100px; /* Increased from 860px */
+  max-width: 95%; /* Prevents layout issues on smaller screens */
+  margin: 0 auto; /* Keep it centered */
 }
 
-/* Adjust the sidebar */
+/* Make the sidebar (header) narrower */
 header {
-  width: 220px;    /* Slightly reduce the sidebar width */
-  float: left;
-  position: fixed;
-  padding-right: 10px; /* Optional spacing */
+  width: 180px; /* Reduced from 270px */
 }
 
-/* Adjust the content section */
+/* Expand the content area */
 section {
-  width: 800px;    /* Increase the content width */
-  float: right;
-  padding: 20px;
-  box-sizing: border-box;
+  width: calc(100% - 220px); /* Adjusts dynamically, considering header + margin */
+  margin-left: 220px; /* Adds spacing to the left of the content */
+  padding-right: 10px; /* extra breathing room on the right */
+  min-width: 300px; /* Prevents the section from shrinking too small */
 }
 
-/* Responsive Fix for Smaller Screens */
-@media (max-width: 1000px) {
+/* Adjust the footer to align with the header */
+footer {
+  width: 180px; /* Match the new header width */
+}
+
+/* Responsive tweaks to maintain mobile-friendliness */
+@media (max-width: 960px) {
   .wrapper {
     width: auto;
-    margin: 0 10px;
+    margin: 0;
   }
 
-  header, section {
+  header, section, footer {
+    width: auto;
     float: none;
     position: static;
-    width: auto;
+    margin: 0;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 20px;
+    margin: 0;
   }
 }
 
+/* Control the image size in the header */
+header img {
+  max-width: 180px; /* Limit the image width */
+  height: auto;     /* Maintain aspect ratio */
+  display: block;   /* Prevent extra spacing below the image */
+  margin: 0 auto;   /* Center the image horizontally */
+}
+
+/* Adjust image behavior on smaller screens */
+@media (max-width: 960px) {
+  header h1 {
+    text-align: center;  /* Keep text centered on smaller screens too */
+  }
+
+  header img {
+    max-width: 180px; /* Slightly smaller image when stacked */
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    max-width: 130px; /* Even smaller for very narrow screens */
+  }
+}
 
 
 /* Custom grid for project pages */
 /* Portfolio Grid Layout */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-  gap: 25px;               /* Space between cards */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width */
+  gap: 25px;                /* Space between cards */
   padding: 30px;
-  justify-items: center;   /* Center the cards */
-  max-width: 900px;        /* Optional: limit the grid width for better layout */
-  margin: 0 auto;          /* Center the grid horizontally */
+  justify-items: center;    /* Center the cards */
+  max-width: 1000px;        /* Adjusted for better layout control */
+  margin: 0 auto;           /* Center the grid horizontally */
 }
-
 
 /* ---- CARD LAYOUT ---- */
 .project-card {
@@ -57,19 +93,20 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  width: 350px;               /* Fixed Width for Consistency */
-  height: 300px;              /* Optional: Fixed Height for uniformity */
+  width: 100%;              /* Make cards responsive to grid columns */
+  max-width: 350px;         /* Limit card width for consistency */
+  height: 270px;            /* Reduced from 300px to 270px */
   cursor: pointer;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures even spacing inside the card */
+  justify-content: space-between; /* Even spacing inside the card */
 }
 
 /* ---- IMAGE STYLE ---- */
 .project-card img {
   width: 100%;
-  height: 180px;              /* Consistent image height */
+  height: 160px;             /* Reduced from 180px to 160px */
   object-fit: cover;
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -99,35 +136,41 @@ section {
 
 /* ---- HOVER EFFECT ---- */
 .project-card:hover {
-  transform: scale(1.05);     /* Slight hover effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);     /* Increased from 1.05 to 1.1 for a bigger zoom */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35); /* Stronger shadow for more depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Slightly faster animation */
 }
 
 .project-card:hover img {
   opacity: 0.3;               /* Faded image on hover */
-  transform: scale(1.05);
+  transform: scale(1.08);     /* Slightly increased image zoom for added depth */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Match card transition */
 }
+
 
 /* ---- HIDDEN OVERLAY INFO ---- */
 .overlay-info {
   position: absolute;
-  top: 50%;
+  top: 30%;                  /* Moved up from 50% to 45% */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Keeps the text centered */
   text-align: center;
   opacity: 0;
   transition: opacity 0.4s ease;
   color: #000;
   padding: 10px;
-  font-size: 0.9em;
+  font-size: 1.1em;          /* Increased from 0.9em to 1.1em */
   font-weight: bold;
-  pointer-events: none;        /* Makes the overlay non-blocking for clicks */
-  width: 90%;                  /* Keep text neatly inside the card */
+  pointer-events: none;      /* Prevents blocking clicks */
+  width: 90%;                /* Keep text neatly inside the card */
+  line-height: 1.4;          /* Optional: improves text spacing */
 }
 
 .project-card:hover .overlay-info {
-  opacity: 1;                  /* Reveal on hover */
+  opacity: 1;                /* Reveal on hover */
+  transition: opacity 0.3s ease; /* Match transition timing */
 }
+
 
 /* ✅ HOVER EFFECTS ONLY FOR DEVICES THAT SUPPORT HOVER */
 @media (hover: hover) and (pointer: fine) {
