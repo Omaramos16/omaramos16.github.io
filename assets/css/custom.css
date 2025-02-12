@@ -150,18 +150,39 @@ section {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 560px;  /* Limits the width of the video */
-  margin: 20px auto;  /* Center horizontally with margin */
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
-  overflow: hidden;    /* Hide overflow to avoid scrollbars */
+  max-width: 640px;   /* Adjusted for Drive video */
+  margin: 20px auto;  /* Center horizontally */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  background: #000;   /* Optional: Prevent flickering borders */
 }
 
-/* Style the YouTube iframe */
+/* Style the iframe (Drive or YouTube) */
 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;  /* Remove any default border */
+  border: none;
 }
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center;    /* Center images horizontally */
+  gap: 15px;              /* Space between images */
+}
+
+.image-container img {
+  max-width: 100%;        /* Responsive images */
+  height: auto;           /* Maintain aspect ratio */
+  border-radius: 8px;     /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Add extra space below the last image */
+.image-container img:last-child {
+  margin-bottom: 30px;    /* Adjust this value as needed */
+}
+

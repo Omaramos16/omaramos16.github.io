@@ -3,17 +3,24 @@ layout: default
 title: ME218A Final Project - SPDL
 ---
 
-## 🚀 **Project Overview**
-
+## 🚀 **Project Overview**  
 - **Project Name:** Smart Portable Electronics Design Locker (SPDL)  
-- **Role:** Embedded Systems & Integration Lead
+- **Role:** Embedded Systems & Integration Lead  
 - **Technologies:** Embedded C/C++, FSMs, SPI, PIC32, KiCad, MPLAB X  
+- **Class:** ME218A: Smart Product Design Fundamentals (Graduate-Level Mechatronics Series)  
+- **Team Size:** 3 members  
+- **Duration:** ~3 weeks  
 - **Key Contributions:** FSM Design, SPI Driver Development, System Reliability, Mechanical Design Input  
-- **🎥 Demo:** [Watch Here](https://www.youtube.com/embed/8TC3ehUtTb4) | **[Project Website](https://me218a-smartportableelectronicsdesignlab.weebly.com/)**
+- **Documentation:** <a href="https://me218a-smartportableelectronicsdesignlab.weebly.com/" target="_blank" rel="noopener noreferrer">Project Website</a>  
+- **🎥 Demo:**  
+<div class="video-container">  
+  <iframe src="https://www.youtube.com/embed/8TC3ehUtTb4" frameborder="0" allowfullscreen></iframe>  
+</div>  
+
 
 ---
 
-# [Smart Portable Electronics Design Locker (SPDL)](https://me218a-smartportableelectronicsdesignlab.weebly.com/)
+# Smart Portable Electronics Design Locker (SPDL)
 
 The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit design for mechatronics and signal processing applications. It automates the creation of eight fundamental circuits—including Op-Amp amplifiers and comparator configurations—by calculating component values, generating schematics, and recommending precise parts based on user-defined parameters. SPDL eliminates complex manual calculations, making circuit design faster and more accessible.
 
@@ -107,14 +114,22 @@ Working on SPDL deepened my expertise in embedded systems, particularly FSM desi
 </div>
 
 - **Main Finite State Machine:**  
-![Main FSM](../assets/images/spdl_main_fsm.png)
+<div class="image-container">
+  <img src="../assets/images/spdl_main_fsm.png" alt="Main FSM">
+</div>
 
-- **Assembly**  
-![Main FSM](../assets/images/spdl-front.jpg)
+- **Assembly:**  
+<div class="image-container">
+  <img src="../assets/images/spdl-front.jpg" alt="Assembly">
+</div>
+
+
+
 
 ---
 
 ## 📂 **Project Documentation**
-- 📄 [Project Handout (PDF)](../assets/docs/ME218a_F23_Project_Spec_Rev3.pdf)
-- 🌐 [Project Website](https://me218a-smartportableelectronicsdesignlab.weebly.com/)
-- 🔗 [Source Code](https://me218a-smartportableelectronicsdesignlab.weebly.com/software.html)
+- 📄 <a href="../assets/docs/ME218a_F23_Project_Spec_Rev3.pdf" target="_blank" rel="noopener noreferrer">Project Handout (PDF)</a>
+- 🌐 <a href="https://me218a-smartportableelectronicsdesignlab.weebly.com/" target="_blank" rel="noopener noreferrer">Project Website</a>
+- 🔗 <a href="https://me218a-smartportableelectronicsdesignlab.weebly.com/software.html" target="_blank" rel="noopener noreferrer">Source Code</a>
+

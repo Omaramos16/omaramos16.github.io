@@ -17,41 +17,43 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 ## 🔌 Embedded Systems & Electro-Mechanical Projects
 
 <div class="project-grid">
+  <!-- SPDL Project Card -->
   <div class="project-card">
     <a href="./me218a-spdl.html">
       <img src="/assets/images/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
       <div class="card-content">
         <h3>Smart Portable Electronics Design Locker</h3>
-        <p>Embedded Systems | FSMs | SPI Communication</p>
+        <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
       </div>
       <div class="overlay-info">
-        Smart product automating analog circuit design with dynamic FSMs, SPI communication, and real-time data processing.
+        Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
+      </div>
+    </a>
+  </div>
+
+  <!-- Nuttin' Special Project Card -->
+  <div class="project-card">
+    <a href="me218b-ns.html">
+      <img src="/assets/images/main-218b.png" alt="Nuttin' Special Thumbnail">
+      <div class="card-content">
+        <h3>System for Quick Removal of Litter (SQRL) - Nuttin’ Special</h3>
+        <p>Autonomous Robotics | PID Control | Dual Microcontroller Architecture</p>
+      </div>
+      <div class="overlay-info">
+        Autonomous robot with precision PID motor control, dual microcontroller architecture, and real-time navigation algorithms.
       </div>
     </a>
   </div>
 
   <div class="project-card">
-    <a href="me218b-nuttin-special.md">
-      <img src="/assets/images/ph.jpg" alt="Nuttin' Special Thumbnail">
+    <a href="me218c-sk.html">
+      <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
       <div class="card-content">
-        <h3>Nuttin' Special (ME218B)</h3>
-        <p>PCB Design | Embedded C | Control Systems</p>
+        <h3>Super KARLio Boat</h3>
+        <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
       </div>
       <div class="overlay-info">
-        Advanced control algorithms with custom PCB hardware integration.
-      </div>
-    </a>
-  </div>
-
-  <div class="project-card">
-    <a href="me218c-mario-boat.md">
-      <img src="/assets/images/ph.jpg" alt="Mario Boat Project Thumbnail">
-      <div class="card-content">
-        <h3>Mario Boat (ME218C)</h3>
-        <p>Robotics | NES Controller | Embedded Software</p>
-      </div>
-      <div class="overlay-info">
-        Custom robotic system using NES controller input for navigation tasks.
+        NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
       </div>
     </a>
   </div>
