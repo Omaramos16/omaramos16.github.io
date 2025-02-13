@@ -83,6 +83,18 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
       </a>
   </div>
 
+  <div class="project-card">
+      <a href="me220-sensors.html">
+          <img src="/assets/images/me220-sensors/220-filter.png" alt="Sensor Systems & Design Thumbnail">
+          <div class="card-content">
+              <h3>Sensor Systems, Analysis & Design</h3>
+              <p>IMU Data Analysis | Signal Processing | Sensors</p>
+          </div>
+          <div class="overlay-info">
+              Hands-on sensor experiments and real-world assistive technology system design, leveraging IMU data, motion tracking, and feasibility analysis.
+          </div>
+      </a>
+  </div>
 
   <div class="project-card">
       <a href="me218c-bitbang-uart.html">

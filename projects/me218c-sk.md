@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ME218C Final Project - Super KARLio (NEDMO & 0ILUS)
+title: Super KARLio
 ---
 
 ## 🚀 **Project Overview**  

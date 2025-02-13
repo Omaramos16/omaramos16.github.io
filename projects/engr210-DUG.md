@@ -1,7 +1,8 @@
 ---
 layout: default
-title: ENGR210 - DUG: A Communication Device for Service Dogs
+title: DUG - A Communication Device for Service Dogs
 ---
+
 
 ## 🚀 **Project Overview**  
 - **Project Name:** DUG - *A Communication Device for Service Dogs*  

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ME210 Final Project - The Big Robowski
+title: The Big Robowski
 ---
 
 ## 🚀 **Project Overview**  

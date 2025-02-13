@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ME218B Final Project - SQRL (Nuttin' Special)
+title: SQRL (Nuttin' Special)
 ---
 
 ## 🚀 **Project Overview**  

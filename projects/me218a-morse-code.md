@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ME218A Morse Code Decoder
+title: Morse Code Decoder
 ---
 
 ## 🚀 **Project Overview**  

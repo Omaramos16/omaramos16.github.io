@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ME218A Final Project - SPDL
+title: SPDL
 ---
 
 ## 🚀 **Project Overview**  

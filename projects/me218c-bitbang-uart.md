@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bit-Banged UART in Assembly (PIC10F322)
+title: Bit-Banged UART in Assembly
 ---
 
 ## 🚀 **Project Overview**  
