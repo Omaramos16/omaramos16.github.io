@@ -8,16 +8,17 @@ title: Projects
 Welcome to my collection of projects, showcasing my passion for learning, problem-solving, and general engineering. I believe in being a well-rounded engineer who thrives on understanding how every piece fits together, from embedded systems to AI and mechanical designs.
 
 ## Jump to:
-  - [🔌 Embedded Systems & Electro-Mechanical Projects](#-embedded-systems--electro-mechanical-projects)
-  - [🤖 Software, AI, & Machine Learning Projects](#-software-ai--machine-learning-projects)
-  - [⚙️ Purely Mechanical Projects](#️-purely-mechanical-projects)
+
+- [🔌 Embedded Systems & Electro-Mechanical Projects](#-embedded-systems--electro-mechanical-projects)
+- [🤖 Software, AI, & Machine Learning Projects](#-software-ai--machine-learning-projects)
+- [⚙️ Purely Mechanical Projects](#️-purely-mechanical-projects)
 
 ---
 
 ## 🔌 Embedded Systems & Electro-Mechanical Projects
 
 <div class="project-grid">
-    <div class="project-card">
+  <div class="project-card">
     <a href="me218c-sk.html">
       <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
       <div class="card-content">
@@ -32,7 +33,7 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 
   <div class="project-card">
     <a href="me218b-ns.html">
-      <img src="/assets/images/main-218b.png" alt="Nuttin' Special Thumbnail">
+      <img src="/assets/images/me218b-ns/main-218b.png" alt="Nuttin' Special Thumbnail">
       <div class="card-content">
         <h3>System for Quick Removal of Litter (SQRL) - Nuttin’ Special</h3>
         <p>Autonomous Robotics | PID Control | Dual Microcontroller Architecture</p>
@@ -45,7 +46,7 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 
   <div class="project-card">
     <a href="./me218a-spdl.html">
-      <img src="/assets/images/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
+      <img src="/assets/images/me218a-spdl/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
       <div class="card-content">
         <h3>Smart Portable Electronics Design Locker</h3>
         <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
@@ -54,6 +55,19 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
         Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
       </div>
     </a>
+  </div>
+
+  <div class="project-card">
+      <a href="me210-robowski.html">
+          <img src="/assets/images/me210-robowski/210-main.jpg" alt="Big Robowski Thumbnail">
+          <div class="card-content">
+              <h3>The Big Robowski</h3>
+              <p>Arduino-Based Robotics | IR Localization | Mecanum Wheel Control</p>
+          </div>
+          <div class="overlay-info">
+              Autonomous bowling robot using IR beacon tracking, ultrasonic positioning, and an omnidirectional mecanum drive for high-speed, precision scoring.
+          </div>
+      </a>
   </div>
 
   <div class="project-card">

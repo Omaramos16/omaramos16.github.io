@@ -135,19 +135,6 @@ header img {
 }
 
 /* ---- HOVER EFFECT ---- */
-.project-card:hover {
-  transform: scale(1.1);     /* Slightly bigger hover effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-}
-
-
-.project-card:hover img {
-  opacity: 0.3;               /* Faded image on hover */
-  transform: scale(1.1);     /* Slightly increased image zoom for added depth */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Match card transition */
-}
-
-
 /* ---- HIDDEN OVERLAY INFO ---- */
 .overlay-info {
   position: absolute;
@@ -166,28 +153,36 @@ header img {
   line-height: 1.4;          /* Optional: improves text spacing */
 }
 
-.project-card:hover .overlay-info {
-  opacity: 1;                /* Reveal on hover */
-  transition: opacity 0.3s ease; /* Match transition timing */
-}
-
-
 /* ✅ HOVER EFFECTS ONLY FOR DEVICES THAT SUPPORT HOVER */
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover {
-    transform: scale(1.05);     /* Slight hover effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);     /* Slightly bigger hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   }
 
   .project-card:hover img {
     opacity: 0.3;               /* Faded image on hover */
-    transform: scale(1.05);
+    transform: scale(1.1);      /* Slightly increased image zoom */
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .project-card:hover .overlay-info {
-    opacity: 1;                 /* Reveal overlay only on hover devices */
+    opacity: 1;                 /* Reveal on hover */
+    transition: opacity 0.3s ease;
   }
 }
+
+/* 🔧 Disable scaling on mobile to prevent jumpy scrolling */
+@media (hover: none) {
+  .project-card {
+    transition: none; /* Disable hover transitions on touch devices */
+  }
+
+  .project-card img {
+    transform: none !important; /* Prevent accidental zooming */
+  }
+}
+
 
 /* Responsive Video Container */
 .video-container {

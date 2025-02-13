@@ -115,12 +115,12 @@ Working on SPDL deepened my expertise in embedded systems, particularly FSM desi
 
 - **Main Finite State Machine:**  
 <div class="image-container">
-  <img src="../assets/images/spdl_main_fsm.png" alt="Main FSM">
+  <img src="../assets/images/me218a-spdl/spdl_main_fsm.png" alt="Main FSM">
 </div>
 
 - **Assembly:**  
 <div class="image-container">
-  <img src="../assets/images/spdl-front.jpg" alt="Assembly">
+  <img src="../assets/images/me218a-spdl/spdl-front.jpg" alt="Assembly">
 </div>
 
 

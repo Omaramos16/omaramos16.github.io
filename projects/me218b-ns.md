@@ -15,7 +15,7 @@ title: ME218B Final Project - SQRL (Nuttin' Special)
 - **Documentation:** <a href="https://nuttinspecial.weebly.com/" target="_blank" rel="noopener noreferrer">Project Website</a>  
 
 <div class="image-container">
-  <img src="../assets/images/NS_home.png" alt="Main View">
+  <img src="../assets/images/me218b-ns/NS_home.png" alt="Main View">
 </div>
 
 ---
@@ -143,14 +143,14 @@ title: ME218B Final Project - SQRL (Nuttin' Special)
 
 - **Game-Plan Hierarchical State Machine:**  
 <div class="image-container">
-  <img src="../assets/images/gameactivehsmdiagram.png" alt="Game-Plan FSM">
+  <img src="../assets/images/me218b-ns/gameactivehsmdiagram.png" alt="Game-Plan FSM">
 </div>  
 
 - **Assembly Views:**  
 <div class="image-container">
-  <img src="../assets/images/main-218b.png" alt="Assembly View">
-  <img src="../assets/images/218b-front.png" alt="Front View">
-  <img src="../assets/images/218b-back.jpg" alt="Back View">
+  <img src="../assets/images/me218b-ns/main-218b.png" alt="Assembly View">
+  <img src="../assets/images/me218b-ns/218b-front.png" alt="Front View">
+  <img src="../assets/images/me218b-ns/218b-back.jpg" alt="Back View">
 </div>
 
 ---
