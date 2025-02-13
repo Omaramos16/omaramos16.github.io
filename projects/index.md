@@ -17,21 +17,19 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 ## 🔌 Embedded Systems & Electro-Mechanical Projects
 
 <div class="project-grid">
-  <!-- SPDL Project Card -->
-  <div class="project-card">
-    <a href="./me218a-spdl.html">
-      <img src="/assets/images/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
+    <div class="project-card">
+    <a href="me218c-sk.html">
+      <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
       <div class="card-content">
-        <h3>Smart Portable Electronics Design Locker</h3>
-        <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
+        <h3>Super KARLio Boat</h3>
+        <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
       </div>
       <div class="overlay-info">
-        Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
+        NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
       </div>
     </a>
   </div>
 
-  <!-- Nuttin' Special Project Card -->
   <div class="project-card">
     <a href="me218b-ns.html">
       <img src="/assets/images/main-218b.png" alt="Nuttin' Special Thumbnail">
@@ -46,17 +44,44 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
-    <a href="me218c-sk.html">
-      <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
+    <a href="./me218a-spdl.html">
+      <img src="/assets/images/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
       <div class="card-content">
-        <h3>Super KARLio Boat</h3>
-        <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
+        <h3>Smart Portable Electronics Design Locker</h3>
+        <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
       </div>
       <div class="overlay-info">
-        NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
+        Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
       </div>
     </a>
   </div>
+
+  <div class="project-card">
+      <a href="me218c-bitbang-uart.html">
+          <img src="/assets/images/uart_assembly/uart_assembly.png" alt="Bit-Banged UART Thumbnail">
+          <div class="card-content">
+              <h3>Bit-Banged UART</h3>
+              <p>Assembly Language | Full-Duplex UART | Interrupt-Driven RX</p>
+          </div>
+          <div class="overlay-info">
+              A fully software-implemented UART (TX & RX) in assembly on a PIC10F322, featuring bit-banging transmission, interrupt-driven reception, and NCO-based baud rate control.
+          </div>
+      </a>
+  </div>
+
+  <div class="project-card">
+      <a href="me218a-morse-code.html">
+        <img src="/assets/images/me218a-morse-decoder/morse-decoder-main.jpg" alt="Morse Code Decoder Thumbnail">
+        <div class="card-content">
+          <h3>Morse Code Decoder</h3>
+          <p>Infrared Signal Processing | Hardware Abstraction | Software Modularity</p>
+        </div>
+        <div class="overlay-info">
+          Real-time Morse Code decoding system using an IR sensor, self-calibrating finite state machine, and SPI-controlled LED matrix for scrolling text output.
+        </div>
+      </a>
+  </div>
+
 </div>
 
 ---

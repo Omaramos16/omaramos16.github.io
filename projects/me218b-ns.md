@@ -40,6 +40,8 @@ title: ME218B Final Project - SQRL (Nuttin' Special)
 - Resource-Constrained System Optimization (Maximized Timers/PWM Channels)  
 - Low-Level Driver Development (Motors, Servos, Sensors)  
 - System Integration Testing & Debugging with KiCad and CAD-Based Prototyping  
+- Direct Stepper Motor Control (full-step through an H-bridge (SN754410))
+
 
 ---
 
@@ -83,6 +85,15 @@ title: ME218B Final Project - SQRL (Nuttin' Special)
 - **Localization Errors with Beacon Detection:**  
   - *Challenge:* IR beacon sensing inaccuracies, reducing localization success to 75%.  
   - *Solution:* Diagnosed circuit gain issues and recommended resistor adjustments (*achieved 100% localization accuracy*).  
+
+- **Manual Stepper Motor Drive Implementation:**  
+  - *Challenge:* Controlling a stepper motor without a driver board, requiring precise manual step sequencing.  
+  - *Solution:* Designed a software-driven stepper control method, directly toggling H-bridge outputs to energize the correct coils for movement.
+
+- **Fine-Tuned PID Control for Encoder-Based Motors:**  
+  - *Challenge:* Achieving smooth and precise robot movement through closed-loop control.  
+  - *Solution:* Experimentally tuned PID gains using real-world robot behavior, optimizing responsiveness and straight-line driving accuracy.
+
 
 ---
 
