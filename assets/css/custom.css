@@ -63,13 +63,13 @@ header img {
   }
 
   header img {
-    max-width: 180px; /* Slightly smaller image when stacked */
+    max-width: 220px; /* Slightly smaller image when stacked */
   }
 }
 
 @media (max-width: 480px) {
   header img {
-    max-width: 130px; /* Even smaller for very narrow screens */
+    max-width: 140px; /* Even smaller for very narrow screens */
   }
 }
 
@@ -223,4 +223,17 @@ header img {
 /* Add extra space below the last image */
 .image-container img:last-child {
   margin-bottom: 30px;    /* Adjust this value as needed */
+}
+
+
+.slides-container, .pdf-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slides-container iframe, .pdf-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
 }

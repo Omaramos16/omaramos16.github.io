@@ -71,6 +71,20 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
+      <a href="engr210-DUG.html">
+          <img src="/assets/images/engr210-DUG/DUG_Final.JPG" alt="DUG Project Thumbnail">
+          <div class="card-content">
+              <h3>DUG - Service Dog Communication Device</h3>
+              <p>User-Centered Design | Assistive Technology | Embedded Prototyping</p>
+          </div>
+          <div class="overlay-info">
+              Bluetooth-enabled communication device designed for service dog owners, allowing them to prevent distractions using customizable pre-recorded messages.
+          </div>
+      </a>
+  </div>
+
+
+  <div class="project-card">
       <a href="me218c-bitbang-uart.html">
           <img src="/assets/images/uart_assembly/uart_assembly.png" alt="Bit-Banged UART Thumbnail">
           <div class="card-content">
