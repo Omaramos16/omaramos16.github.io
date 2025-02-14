@@ -20,7 +20,7 @@ title: SPDL
 
 ---
 
-# Smart Portable Electronics Design Locker (SPDL)
+## 📖 **Project Summary**  
 
 The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit design for mechatronics and signal processing applications. It automates the creation of eight fundamental circuits—including Op-Amp amplifiers and comparator configurations—by calculating component values, generating schematics, and recommending precise parts based on user-defined parameters. SPDL eliminates complex manual calculations, making circuit design faster and more accessible.
 

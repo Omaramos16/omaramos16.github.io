@@ -130,6 +130,19 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 
 <div class="project-grid">
   <div class="project-card">
+      <a href="cs225a-pandabat.html">
+          <img src="/assets/images/cs225a-Pandabat/pandabat.png" alt="Baseball Batting Robot Simulation Thumbnail">
+          <div class="card-content">
+              <h3>Baseball Batting Robot Simulation</h3>
+              <p>Multi-Threaded Simulation | Motion Capture | Real-Time Robotics</p>
+          </div>
+          <div class="overlay-info">
+              Human-in-the-loop robotic batting simulation using OptiTrack motion capture, real-time physics, and a Panda robot in multi-threaded simulation framework.
+          </div>
+      </a>
+  </div>
+
+  <div class="project-card">
     <a href="#">
       <img src="/assets/images/ph.jpg" alt="Software Project Thumbnail">
       <div class="card-content">
@@ -161,6 +174,20 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 ## ⚙️ Purely Mechanical Projects
 
 <div class="project-grid">
+  <div class="project-card">
+      <a href="continuum.html">
+          <img src="/assets/images/continuum/MTM_103.png" alt="Continuum Timekeeper Thumbnail">
+          <div class="card-content">
+              <h3>Continuum Timekeeper</h3>
+              <p>Sandcasting | CNC Machining | CAD | Metal Finishing</p>
+          </div>
+          <div class="overlay-info">
+              Designed and fabricated an aluminum watch winder housing using SOLIDWORKS, 3D-printed casting patterns, sandcasting, and machining.
+          </div>
+      </a>
+  </div>
+
+
   <div class="project-card">
     <a href="#">
       <img src="/assets/images/ph.jpg" alt="Mechanical Project Thumbnail">
