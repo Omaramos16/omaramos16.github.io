@@ -237,3 +237,13 @@ header img {
   max-width: 800px;
   height: 500px;
 }
+
+.pdf-container {
+  max-width: 900px; /* Limits the width */
+  margin: 20px auto; /* Centers the PDF */
+  text-align: center;
+}
+
+.pdf-container iframe {
+  border: none; /* Removes border */
+}

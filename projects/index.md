@@ -11,7 +11,7 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 
 - [🔌 Embedded Systems & Electro-Mechanical Projects](#-embedded-systems--electro-mechanical-projects)
 - [🤖 Software, AI, & Machine Learning Projects](#-software-ai--machine-learning-projects)
-- [⚙️ Purely Mechanical Projects](#️-purely-mechanical-projects)
+- [⚙️ Mechanical Design & Fabrication](#️-mechanical-systems-design--fabrication-projects)
 
 ---
 
@@ -171,15 +171,29 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
 
 ---
 
-## ⚙️ Purely Mechanical Projects
+## ⚙️ Mechanical Systems Design & Fabrication Projects
 
 <div class="project-grid">
+
+  <div class="project-card">
+      <a href="me104-going_the_distance.html">
+          <img src="/assets/images/me104-gtd/project2_main.png" alt="Going the Distance Robot">
+          <div class="card-content">
+              <h3>Going the Distance Robot</h3>
+              <p>Power Transmission | Motor Characterization | Structural FEA</p>
+          </div>
+          <div class="overlay-info">
+              Designed an award-winning high-speed climbing robot using motor characterization, power-efficient transmission design, and structural FEA for mass-efficient performance.
+          </div>
+      </a>
+  </div>
+
   <div class="project-card">
       <a href="continuum.html">
           <img src="/assets/images/continuum/MTM_103.png" alt="Continuum Timekeeper Thumbnail">
           <div class="card-content">
               <h3>Continuum Timekeeper</h3>
-              <p>Sandcasting | CNC Machining | CAD | Metal Finishing</p>
+              <p>Sandcasting | Machining | CAD | Metal Finishing</p>
           </div>
           <div class="overlay-info">
               Designed and fabricated an aluminum watch winder housing using SOLIDWORKS, 3D-printed casting patterns, sandcasting, and machining.
@@ -187,30 +201,31 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
       </a>
   </div>
 
-
   <div class="project-card">
-    <a href="#">
-      <img src="/assets/images/ph.jpg" alt="Mechanical Project Thumbnail">
-      <div class="card-content">
-        <h3>Bridge Load Analysis (ENGR14)</h3>
-        <p>Statics project analyzing bridge load distribution.</p>
-      </div>
-      <div class="overlay-info">
-        Analyzing structural integrity through detailed load distribution studies.
-      </div>
-    </a>
+      <a href="roadie.html">
+          <img src="/assets/images/roadie/roadie_main.png" alt="Roadie Guitar Phone Holder">
+          <div class="card-content">
+              <h3>Roadie – Guitar Phone Holder</h3>
+              <p>3D Printing | CAD | FEA | Design for Additive Manufacturing</p>
+          </div>
+          <div class="overlay-info">
+              Designed a modular, tool-free guitar phone holder using Fusion 360, FEA-based shape optimization, and FDM 3D printing for seamless playability.
+          </div>
+      </a>
   </div>
 
   <div class="project-card">
-    <a href="#">
-      <img src="/assets/images/ph.jpg" alt="Mechanical Project Thumbnail">
-      <div class="card-content">
-        <h3>Space Wrench (ME127)</h3>
-        <p>Design and prototyping of tools for space applications.</p>
-      </div>
-      <div class="overlay-info">
-        Prototyping advanced tools optimized for zero-gravity environments.
-      </div>
-    </a>
+      <a href="me104-mass-efficient-component.html">
+          <img src="/assets/images/me104-mec/mec-104-main.png" alt="Mass-Efficient Structural Component">
+          <div class="card-content">
+              <h3>Mass-Efficient Structural Component</h3>
+              <p>Structural Optimization | Buckling Prevention | FEA Validation</p>
+          </div>
+          <div class="overlay-info">
+              Designed the lightest possible load-bearing component by leveraging force alignment, buckling-resistant geometry, and computational stress analysis.
+          </div>
+      </a>
   </div>
+
+  
 </div>
