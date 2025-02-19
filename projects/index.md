@@ -163,10 +163,11 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
               <p>Verilog | Digital Signal Processing | VGA & Audio Codec</p>
           </div>
           <div class="overlay-info">
-              Designed an FPGA-based digital music player with real-time audio synthesis, playback control, and waveform visualization. Implemented chords, harmonics, and interactive scaling using Verilog and FSMs.
+              Built an FPGA-based music player with real-time synthesis, playback control, and waveform visualization. Added chords, harmonics, and interactive scaling using Verilog and FSMs.
           </div>
       </a>
   </div>
+
 
   <div class="project-card">
       <a href="robotic-grasping.html">

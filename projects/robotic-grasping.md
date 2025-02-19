@@ -13,6 +13,10 @@ title: Learning Visual Affordances for Robotic Grasping
 
 ---
 
+<div class="image-container">
+  <img src="../assets/images/robotic_grasping/affordance_map.jpeg" alt="Grasping">
+</div>
+
 ## 📖 **Project Summary**  
 This project explores **affordance-based grasping**, where a **neural network predicts the best graspable points in images**.  
 Using a **fully convolutional MiniUNet**, the system generates **affordance maps**—highlighting optimal grasp locations—  
