@@ -71,6 +71,19 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
+      <a href="haptic-wristband.html">
+          <img src="../assets/images/haptic_device/charm_main.jpeg" alt="Haptic Wristband Thumbnail">
+          <div class="card-content">
+              <h3>Wrist-Worn Haptic Feedback Device</h3>
+              <p>Bluetooth Communication | I2C & PWM Control | Custom PCB Design</p>
+          </div>
+          <div class="overlay-info">
+              Wearable haptic device for real-time motion guidance, featuring Classic Bluetooth, I2C-based IMU feedback, and a custom PCB with optimized motor control.
+          </div>
+      </a>
+  </div>
+
+  <div class="project-card">
       <a href="engr210-DUG.html">
           <img src="/assets/images/engr210-DUG/DUG_Final.JPG" alt="DUG Project Thumbnail">
           <div class="card-content">
@@ -143,30 +156,32 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
-    <a href="#">
-      <img src="/assets/images/ph.jpg" alt="Software Project Thumbnail">
-      <div class="card-content">
-        <h3>AI Financial Chatbot</h3>
-        <p>Real-time financial data chatbot with AI capabilities.</p>
-      </div>
-      <div class="overlay-info">
-        A chatbot leveraging AI to provide real-time insights from financial data.
-      </div>
-    </a>
+      <a href="fpga-music-synth.html">
+          <img src="../assets/images/ee108-music/waveform_display.jpeg" alt="FPGA Music Synthesizer Thumbnail">
+          <div class="card-content">
+              <h3>FPGA Music Synthesizer & Waveform Display</h3>
+              <p>Verilog | Digital Signal Processing | VGA & Audio Codec</p>
+          </div>
+          <div class="overlay-info">
+              Designed an FPGA-based digital music player with real-time audio synthesis, playback control, and waveform visualization. Implemented chords, harmonics, and interactive scaling using Verilog and FSMs.
+          </div>
+      </a>
   </div>
 
   <div class="project-card">
-    <a href="#">
-      <img src="/assets/images/ph.jpg" alt="Software Project Thumbnail">
-      <div class="card-content">
-        <h3>Machine Learning Optimizer</h3>
-        <p>ML models for predictive analytics and data-driven decisions.</p>
-      </div>
-      <div class="overlay-info">
-        Optimizing machine learning workflows for enhanced predictive accuracy.
-      </div>
-    </a>
+      <a href="robotic-grasping.html">
+          <img src="../assets/images/robotic_grasping/affordance_map.jpeg" alt="Robotic Grasping Thumbnail">
+          <div class="card-content">
+              <h3>Learning Visual Affordances for Robotic Grasping</h3>
+              <p>Deep Learning | Computer Vision | PyBullet Simulation</p>
+          </div>
+          <div class="overlay-info">
+              Developed a grasp detection model using affordance learning & pose estimation,  
+              improving robotic grasp success in PyBullet simulations.
+          </div>
+      </a>
   </div>
+
 </div>
 
 ---
@@ -189,6 +204,19 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
+      <a href="me104-mass-efficient-component.html">
+          <img src="/assets/images/me104-mec/mec-104-main.png" alt="Mass-Efficient Structural Component">
+          <div class="card-content">
+              <h3>Mass-Efficient Structural Component</h3>
+              <p>Lightweight Engineering | Failure Analysis | Structural Efficiency</p>
+          </div>
+          <div class="overlay-info">
+              Designed the lightest possible load-bearing component by leveraging force alignment, buckling-resistant geometry, and computational stress analysis.
+          </div>
+      </a>
+  </div>
+
+  <div class="project-card">
       <a href="continuum.html">
           <img src="/assets/images/continuum/MTM_103.png" alt="Continuum Timekeeper Thumbnail">
           <div class="card-content">
@@ -206,7 +234,7 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
           <img src="/assets/images/roadie/roadie_main.png" alt="Roadie Guitar Phone Holder">
           <div class="card-content">
               <h3>Roadie – Guitar Phone Holder</h3>
-              <p>3D Printing | CAD | FEA | Design for Additive Manufacturing</p>
+              <p>3D Printing | Ergonomic Design | Mechanical Simulation</p>
           </div>
           <div class="overlay-info">
               Designed a modular, tool-free guitar phone holder using Fusion 360, FEA-based shape optimization, and FDM 3D printing for seamless playability.
@@ -215,17 +243,29 @@ Welcome to my collection of projects, showcasing my passion for learning, proble
   </div>
 
   <div class="project-card">
-      <a href="me104-mass-efficient-component.html">
-          <img src="/assets/images/me104-mec/mec-104-main.png" alt="Mass-Efficient Structural Component">
+      <a href="me127-hooked.html">
+          <img src="/assets/images/me127-hooked/hook_final.png" alt="Portable Folding Hook">
           <div class="card-content">
-              <h3>Mass-Efficient Structural Component</h3>
-              <p>Structural Optimization | Buckling Prevention | FEA Validation</p>
+              <h3>Portable Folding Hook</h3>
+              <p>Material Science | Precision Fit Engineering | Additive Manufacturing</p>
           </div>
           <div class="overlay-info">
-              Designed the lightest possible load-bearing component by leveraging force alignment, buckling-resistant geometry, and computational stress analysis.
+              Designed a portable folding hook using multi-material SLA 3D printing. Integrated press-fit joints, magnets, and stress-optimized geometry for strength and portability.
           </div>
       </a>
   </div>
 
-  
+  <div class="project-card">
+      <a href="mm-dispenser.html">
+          <img src="/assets/images/mm-dispenser/final_dispenser.png" alt="M&M Arcade Dispenser">
+          <div class="card-content">
+              <h3>M&M Arcade Dispenser</h3>
+              <p>Geneva Drive | 3D Printing | Mechanical Prototyping</p>
+          </div>
+          <div class="overlay-info">
+              Designed a mechanical candy dispenser with a Geneva drive mechanism for precise single-candy dispensing. Inspired by arcade machine controls for an engaging user experience.
+          </div>
+      </a>
+  </div>
+
 </div>
