@@ -1,3 +1,13 @@
+body {
+  background-color: #ffffff;
+  padding: 50px;
+  font: 14px/1.6 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; /* THIS CONTROLS NORMAL TEXT COLOR */
+  font-weight: 400;
+}
+
+
+
 /* Custom adjustments to make the layout wider */
 /* Adjust the wrapper to be wider */
 .wrapper {
@@ -122,14 +132,14 @@ header img {
 }
 
 .card-content h3 {
-  font-size: 1em;            /* Slightly smaller font */
-  color: #333;
+  font-size: 1.1em;            /* Slightly smaller font */
+  color: #000000;
   margin-bottom: 5px;
 }
 
 .card-content p {
   font-size: 0.9em;
-  color: #666;
+  color: #181818;
   opacity: 0.8;
   margin: 0;
 }

@@ -6,6 +6,7 @@ title: Omar Ramos Escoto
 # Omar Ramos Escoto  
 
 🚀 **Embedded Systems \| Mechatronics \| Smart Product Design** 🚀  
+<br />
 
 I’m a **Stanford M.S./B.S. graduate** passionate about **building intelligent, real-world systems where software, hardware, and control come together.** My expertise spans **embedded firmware, real-time systems, and robotics**, with a focus on designing **reliable, high-performance technology** that bridges the digital and physical worlds.  
 
@@ -15,21 +16,11 @@ I thrive in projects that involve **solving complex engineering challenges**, wh
 - [🔧 Projects](./projects/) – A showcase of my work in robotics, AI, and embedded mechanical design.  
 - [📚 Technical Skills & Coursework](./coursework/) – My core engineering skills & academic background.  
 - [📄 Resume](./resume/) – My professional experience and skills.  
+ <br />
 
 ---
 
-## 🏆 About Me  
-
-I love building **embedded systems and robotics that seamlessly integrate hardware and software** to solve real-world challenges. My focus is on designing **robust, high-performance systems** for automation, robotics, and intelligent devices.  
-
-Beyond engineering, I’m passionate about **mentorship and leadership in STEM**. I teach AI/ML to high school students at [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provide college and high school tutoring in engineering and mathematics through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, where I’ve completed hundreds of hours of instruction with a 5-star rating.  
-
-At Stanford, I held **leadership and mentorship roles**, organizing hands-on workshops, fostering technical communities, and supporting first-generation students in STEM.  
-
-Outside of engineering, I enjoy **designing & building things**, reading, playing guitar, hiking, and soccer.  
- 
----
-
+<br />
 ## 🎯 Interests & Opportunities  
 
 I’m looking for opportunities in **embedded systems, robotics, and hardware/software co-design**. If you're working on **cutting-edge technology in these areas**, I'd love to connect!  
@@ -40,9 +31,11 @@ I’m especially interested in:
 ✅ **Hardware-Software Integration** – Multi-microcontroller systems, real-time data processing, sensor fusion and AI integration.  
 
 **Let's talk!** Feel free to reach out via [email](mailto:ramos16@alumni.stanford.edu) or [LinkedIn](https://linkedin.com/in/omarramosescoto/){:target="_blank"}.  
+<br />
 
 ---
 
+<br />
 ## 🛠 **Featured Projects**  
 
 <div class="project-grid">
@@ -85,9 +78,11 @@ I’m especially interested in:
 </div>  
 
 ▶ **[See All Projects](./projects/)**  
+<br />
 
 ---
 
+<br />
 ## 🎓 Education  
 
 **Stanford University – M.S. Mechanical Engineering (Mechatronics)** - ***GPA: 4.0***  
@@ -95,9 +90,25 @@ I’m especially interested in:
 
 **Stanford University – B.S. Computer Science (Robotics & Mechatronics Track), Minor in Mechanical Engineering Design** - ***GPA: 3.8***  
 📍 Sep 2018 – Jun 2024 | Stanford, CA, USA  
+<br />
 
 ---
 
+<br />
+## 🏆 About Me  
+
+I love building **embedded systems and robotics that seamlessly integrate hardware and software** to solve real-world challenges. My focus is on designing **robust, high-performance systems** for automation, robotics, and intelligent devices.  
+
+Beyond engineering, I’m passionate about **mentorship and leadership in STEM**. I teach AI/ML to high school students at [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provide college and high school tutoring in engineering and mathematics through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, where I’ve completed hundreds of hours of instruction with a 5-star rating.  
+
+At Stanford, I held **leadership and mentorship roles**, organizing hands-on workshops, fostering technical communities, and supporting first-generation students in STEM.  
+
+Outside of engineering, I enjoy **designing & building things**, reading, playing guitar, hiking, and soccer. 
+<br /> 
+
+---
+
+<br />
 ## 📬 Get in Touch  
 
 I'm always open to **new opportunities, collaborations, and technical discussions** in **robotics, embedded systems, and smart product design**.  
