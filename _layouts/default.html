@@ -23,6 +23,17 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
+        <!-- 🔹 Navigation Menu -->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+            <li><a href="{{ '/projects/' | relative_url }}">🔧 Projects</a></li>
+            <li><a href="{{ '/coursework/' | relative_url }}">📚 Technical Skills & Coursework</a></li>
+            <li><a href="{{ '/resume/' | relative_url }}">📄 Resume</a></li>
+          </ul>
+        </nav>
+
+
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         <!-- {% if site.github.is_project_page %}
@@ -33,13 +44,13 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %} -->
 
-        {% if site.show_downloads %}
+        <!-- {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
-        {% endif %}
+        {% endif %} -->
       </header>
       <section>
 
@@ -47,10 +58,7 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Customized & maintained by <strong>omaramos16</strong> — Based on the <a href="https://github.com/orderedlist/minimal" target="_blank" rel="noopener noreferrer">Minimal theme</a>. Hosted on GitHub Pages.</small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

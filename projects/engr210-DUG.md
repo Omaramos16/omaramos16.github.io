@@ -3,7 +3,6 @@ layout: default
 title: DUG - A Communication Device for Service Dogs
 ---
 
-
 ## 🚀 **Project Overview**  
 - **Project Name:** DUG - *A Communication Device for Service Dogs*  
 - **Role:** Component Sourcing and Integration

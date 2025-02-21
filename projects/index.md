@@ -22,38 +22,38 @@ Below, you’ll find a curated selection of my work, demonstrating hands-on expe
 <div class="project-grid">
     <div class="project-card">
         <a href="me218c-sk.html">
-        <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
-        <div class="card-content">
-            <h3>Super KARLio Boat</h3>
-            <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
-        </div>
-        <div class="overlay-info">
-            NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
-        </div>
+            <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
+            <div class="card-content">
+                <h3>Super KARLio Boat</h3>
+                <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
+            </div>
+            <div class="overlay-info">
+                NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
+            </div>
         </a>
     </div>
     <div class="project-card">
         <a href="me218b-ns.html">
-        <img src="/assets/images/me218b-ns/main-218b.png" alt="Nuttin' Special Thumbnail">
-        <div class="card-content">
-            <h3>System for Quick Removal of Litter (SQRL) - Nuttin’ Special</h3>
-            <p>Autonomous Robotics | PID Control | Dual Microcontroller Architecture</p>
-        </div>
-        <div class="overlay-info">
-            Autonomous robot with precision PID motor control, dual microcontroller architecture, and real-time navigation algorithms.
-        </div>
+            <img src="/assets/images/me218b-ns/main-218b.png" alt="Nuttin' Special Thumbnail">
+            <div class="card-content">
+                <h3>System for Quick Removal of Litter (SQRL) - Nuttin’ Special</h3>
+                <p>Autonomous Robotics | PID Control | Dual Microcontroller Architecture</p>
+            </div>
+            <div class="overlay-info">
+                Autonomous robot with precision PID motor control, dual microcontroller architecture, and real-time navigation algorithms.
+            </div>
         </a>
     </div>
     <div class="project-card">
         <a href="./me218a-spdl.html">
-        <img src="/assets/images/me218a-spdl/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
-        <div class="card-content">
-            <h3>Smart Portable Electronics Design Locker</h3>
-            <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
-        </div>
-        <div class="overlay-info">
-            Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
-        </div>
+            <img src="/assets/images/me218a-spdl/spdl-me218a.jpg" alt="SPDL Project Thumbnail">
+            <div class="card-content">
+                <h3>Smart Portable Electronics Design Locker</h3>
+                <p>Embedded Systems | Real-Time FSMs | SPI Communication</p>
+            </div>
+            <div class="overlay-info">
+                Smart product automating analog circuit design with real-time embedded control, dynamic FSMs, and efficient SPI data handling.
+            </div>
         </a>
     </div>
     <div class="project-card">
