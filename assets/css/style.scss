@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 body {
   background-color: #ffffff;
   padding: 50px;
@@ -6,83 +11,160 @@ body {
   font-weight: 400;
 }
 
-
-
-/* Custom adjustments to make the layout wider */
-/* Adjust the wrapper to be wider */
-.wrapper {
-  width: 1100px; /* Increased from 860px */
-  max-width: 95%; /* Prevents layout issues on smaller screens */
-  margin: 0 auto; /* Keep it centered */
-}
-
-/* Make the sidebar (header) narrower */
+/* Ensure header remains smaller */
 header {
-  width: 180px; /* Reduced from 270px */
+  width: 200px; /* Smaller than before */
+  float: left;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 }
 
-/* Expand the content area */
+/* Ensure the header image has a fixed width */
+header img {
+  width: auto; /* Prevents stretching */
+  max-width: 190px; /* Default size */
+  border-radius: 50%; /* Circular shape */
+  margin-bottom: 15px;
+}
+
+/* Navigation Links - Stack Vertically */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+  width: 100%; /* Take full width of header */
+  align-items: center; /* Center buttons */
+}
+
+/* Navigation Button Styling - Updated Colors */
+.nav-button {
+  display: block;
+  width: 80%; /* Button width */
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4; /* Light gray */
+  color: #333; /* Darker text */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Subtle border */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* ✅ Hover Effect - Only for Devices That Support Hover */
+@media (hover: hover) and (pointer: fine) {
+  .nav-button:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    transform: scale(1.05);
+  }
+}
+
+/* Increase content section width */
 section {
-  width: calc(100% - 220px); /* Adjusts dynamically, considering header + margin */
-  margin-left: 220px; /* Adds spacing to the left of the content */
-  padding-right: 10px; /* extra breathing room on the right */
-  min-width: 300px; /* Prevents the section from shrinking too small */
+  width: calc(100% - 250px); /* 100% minus header width + some spacing */
+  float: right;
+  padding-bottom: 30px;
 }
 
-/* Adjust the footer to align with the header */
+.wrapper {
+  max-width: 1100px; /* Instead of fixed width */
+  width: 100%; /* Allows responsiveness */
+  margin: 0 auto;
+}
+
+/* Adjust footer to match header */
 footer {
-  width: 180px; /* Match the new header width */
+  width: 200px;
 }
 
-/* Responsive tweaks to maintain mobile-friendliness */
-@media (max-width: 960px) {
-  .wrapper {
-    width: auto;
-    margin: 0;
+
+@media print, screen and (max-width: 1000px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
   }
 
   header, section, footer {
-    width: auto;
-    float: none;
-    position: static;
-    margin: 0;
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  header img {
+    max-width: 200px; /* Ensures it never exceeds 200px */
+    width: 100%; /* Makes sure it scales down properly */
   }
 
   header {
-    padding: 0 20px;
+    padding-right: 0;
   }
 
   section {
-    padding: 20px;
-    margin: 0;
+    border:5px solid #8a8a8a;
+    border-width:3px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+
+  header a small {
+    display:inline;
+  }
+
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
+
+  .nav-links {
+    flex-direction: row; /* Horizontal buttons on small screens */
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures wrapping instead of overflow */
+  }
+
+  .nav-button {
+    width: auto; /* Prevents stretching */
+    padding: 8px 15px;
   }
 }
 
-/* Control the image size in the header */
-header img {
-  max-width: 180px; /* Limit the image width */
-  height: auto;     /* Maintain aspect ratio */
-  display: block;   /* Prevent extra spacing below the image */
-  margin: 0 auto;   /* Center the image horizontally */
-}
-
-/* Adjust image behavior on smaller screens */
-@media (max-width: 960px) {
-  header h1 {
-    text-align: center;  /* Keep text centered on smaller screens too */
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap: break-word;
   }
 
-  header img {
-    max-width: 220px; /* Slightly smaller image when stacked */
+  header {
+    padding: 0;
   }
-}
 
-@media (max-width: 480px) {
-  header img {
-    max-width: 140px; /* Even smaller for very narrow screens */
+  header ul, header p.view {
+    position: static;
+    text-align: center; /* Keep links centered */
+  }
+
+  pre, code {
+    word-wrap: normal;
   }
 }
 
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+
+  .downloads {
+    width:99%;
+  }
+
+  .downloads li, .downloads li + li + li {
+    width:33%;
+  }
+}
 
 /* Custom grid for project pages */
 /* Portfolio Grid Layout */
@@ -261,56 +343,54 @@ header img {
   height: 800px;
 }
 
-/* 🔹 Navigation Menu Styles */
-.nav-menu {
-  width: 90%; /* Slightly narrower than the profile image */
-  max-width: 160px; /* Ensures it remains smaller than the profile image */
-  margin: 10px auto 0; /* Centered under profile picture */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Contact Buttons Container */
+.contact-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons in a row */
+  gap: 10px; /* Space between buttons */
+  width: 90%;
+  margin-top: 20px;
 }
 
-/* 🔹 Style the Navigation Links */
-.nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.nav-menu li {
-  margin: 5px 0;
-}
-
-.nav-menu a {
+/* 🔹 Contact Button Styling - Matches Nav Buttons */
+.contact-button {
   display: block;
-  padding: 10px 15px;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  color: #333;
-  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Darker text */
   text-decoration: none;
-  border: 1px solid #ddd;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Subtle border */
   transition: background 0.3s ease, transform 0.2s ease;
+  min-width: 150px; /* Prevents buttons from shrinking too much */
+  flex: 1; /* Allows buttons to size evenly in a row */
+  max-width: 250px; /* Ensures buttons don’t get too wide */
 }
 
-.nav-menu a:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.05);
+/* ✅ Hover Effect - Only for Devices That Support Hover */
+@media (hover: hover) and (pointer: fine) {
+  .contact-button:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    transform: scale(1.05);
+  }
 }
 
-/* 🔹 Ensure Navigation Always Stays Below Image */
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* 🔹 Stack Buttons Vertically on Smaller Screens */
+@media screen and (max-width: 600px) {
+  .contact-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
 
-/* 🔹 Hide Navigation Buttons When Layout Collapses */
-@media (max-width: 960px) {
-  .nav-menu {
-    display: none;
+  .contact-button {
+    width: 80%; /* Ensures full width when stacked */
+    max-width: 250px; /* Keeps buttons neat */
   }
 }

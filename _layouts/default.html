@@ -7,7 +7,6 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -24,14 +23,23 @@
         {% endif %}
 
         <!-- 🔹 Navigation Menu -->
-        <nav class="nav-menu">
+        <!-- <nav class="nav-menu">
           <ul>
             <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
             <li><a href="{{ '/projects/' | relative_url }}">🔧 Projects</a></li>
             <li><a href="{{ '/coursework/' | relative_url }}">📚 Technical Skills & Coursework</a></li>
             <li><a href="{{ '/resume/' | relative_url }}">📄 Resume</a></li>
           </ul>
-        </nav>
+        </nav> -->
+
+        <nav class="nav-links">
+          <a href="#top" class="nav-button">🏠 Home</a>
+          <a href="#skills" class="nav-button">🧑‍💻 Technical Skills</a>
+          <a href="#projects" class="nav-button">🛠 Projects</a>
+          <a href="#coursework" class="nav-button">📚 Education & Coursework</a>
+          <a href="https://drive.google.com/file/d/14GJZiN4UaIgkhx-_XF7XPvlJj4fAoSld/view?usp=sharing" 
+             class="nav-button" target="_blank" rel="noopener noreferrer">📄 Download Resume</a>
+        </nav>        
 
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -44,13 +52,11 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %} -->
 
-        <!-- {% if site.show_downloads %}
-        <ul class="downloads">
+        <!-- <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %} -->
+        </ul> -->
       </header>
       <section>
 
