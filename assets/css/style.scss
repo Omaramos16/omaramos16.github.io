@@ -39,20 +39,28 @@ header img {
   align-items: center; /* Center buttons */
 }
 
-/* Navigation Button Styling */
+/* Navigation Button Styling - Updated Colors */
 .nav-button {
   display: block;
   width: 80%; /* Button width */
   text-align: center;
   padding: 10px;
-  background: #267CB9; /* Default color */
-  color: white;
+  background-color: #f4f4f4; /* Light gray */
+  color: #333; /* Darker text */
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  border: 1px solid #ddd; /* Subtle border */
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+/* ✅ Hover Effect - Only for Devices That Support Hover */
+@media (hover: hover) and (pointer: fine) {
+  .nav-button:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    transform: scale(1.05);
+  }
+}
 
 /* Increase content section width */
 section {
