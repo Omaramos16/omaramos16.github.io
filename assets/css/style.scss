@@ -345,3 +345,51 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+/* 🔹 Contact Buttons Container */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons in a row */
+  gap: 10px; /* Space between buttons */
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* 🔹 Contact Button Styling - Matches Nav Buttons */
+.contact-button {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Darker text */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Subtle border */
+  transition: background 0.3s ease, transform 0.2s ease;
+  min-width: 150px; /* Prevents buttons from shrinking too much */
+  flex: 1; /* Allows buttons to size evenly in a row */
+  max-width: 250px; /* Ensures buttons don’t get too wide */
+}
+
+/* ✅ Hover Effect - Only for Devices That Support Hover */
+@media (hover: hover) and (pointer: fine) {
+  .contact-button:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+    transform: scale(1.05);
+  }
+}
+
+/* 🔹 Stack Buttons Vertically on Smaller Screens */
+@media screen and (max-width: 600px) {
+  .contact-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .contact-button {
+    width: 80%; /* Ensures full width when stacked */
+    max-width: 250px; /* Keeps buttons neat */
+  }
+}
