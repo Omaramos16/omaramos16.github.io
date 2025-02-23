@@ -123,6 +123,7 @@ footer {
   .nav-links {
     flex-direction: row; /* Horizontal buttons on small screens */
     justify-content: center;
+    flex-wrap: wrap; /* Ensures wrapping instead of overflow */
   }
 
   .nav-button {
