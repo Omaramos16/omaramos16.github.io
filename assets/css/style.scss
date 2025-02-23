@@ -1,9 +1,51 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 body {
   background-color: #ffffff;
   padding: 50px;
   font: 14px/1.6 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; /* THIS CONTROLS NORMAL TEXT COLOR */
   font-weight: 400;
+}
+
+/* Reduce header width */
+header {
+  width: 200px; /* Was 270px */
+}
+
+/* Increase content section width */
+section {
+  width: 610px;
+  float:right;
+  padding-bottom:30px;
+}
+
+.wrapper {
+  max-width: 960px; /* Instead of fixed width */
+  width: 100%; /* Allows responsiveness */
+  margin: 0 auto;
+}
+
+
+/* Adjust footer to match header */
+footer {
+  width: 200px;
+}
+
+/* Ensure proper mobile responsiveness */
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
 }
 
 /* Custom grid for project pages */
@@ -182,3 +224,5 @@ body {
   width: 100%;
   height: 800px;
 }
+
+
