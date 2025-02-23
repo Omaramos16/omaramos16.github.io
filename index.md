@@ -15,13 +15,11 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
   <a href="https://linkedin.com/in/omarramosescoto/" target="_blank" rel="noopener noreferrer" class="contact-button">💼 LinkedIn</a>
-  <a href="https://drive.google.com/file/d/1xidyjVjIyjST6pNr1aj0w8Ak_Vv3-NOG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-button">📄 View My Resume</a>
+  <a href="https://drive.google.com/file/d/14GJZiN4UaIgkhx-_XF7XPvlJj4fAoSld/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-button">📄 View My Resume</a>
 </div>
 
 <br />  
 
-
-{% capture jump_to_content %}
 ### 🔗 Jump To:
 
 - [🧑‍💻 Technical Skills](#-technical-skills)
@@ -33,12 +31,6 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
 - [📚 Relevant Coursework](#-relevant-coursework)
 - [🏆 About Me](#-about-me)
 - [📬 Get in Touch](#-get-in-touch)
-
-{% endcapture %}
-
-<div class="jump-to-box">
-  {{ jump_to_content | markdownify }}
-</div>
 
 <br />
 
