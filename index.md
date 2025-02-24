@@ -29,7 +29,7 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
   - [⚙️ Mechanical Systems Design and Fabrication Projects](#️-mechanical-systems-design-and-fabrication-projects)
 - [📖 Education](#-education)
 - [📚 Relevant Coursework](#-relevant-coursework)
-- [🏆 About Me \& Get in Touch](#-about-me--get-in-touch)
+- [🏆 About Me](#-about-me)
 
 <br />
 
@@ -478,9 +478,9 @@ Click on a project to learn more!
 
 <br />
 <div id="about"></div> 
-# 🏆 About Me & Get in Touch  
+# 🏆 About Me  
 
-I love being a generalist—understanding how things work and how to make them work better. Whether it’s writing low-level firmware, designing circuits, mechanical design, or optimizing AI-driven systems, I enjoy tackling every step of the process. For me, engineering isn’t just about solving problems—it’s about finding (or creating) interesting ones to solve.  
+I pride myself in being a generalist. Whether it’s writing low-level firmware, designing circuits, mechanical design, or optimizing AI-driven systems, I enjoy tackling every step of the process. For me, engineering isn’t just about solving problems—it’s about finding (or creating) interesting ones to solve.  
 
 Beyond engineering, I’m passionate about teaching and mentorship. I’ve taught AI/ML to high school students through [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provided engineering and math tutoring through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, completing hundreds of hours of instruction with a 5-star rating. At Stanford, I helped organize hands-on workshops, foster technical communities, and support first-generation students in STEM like myself.  
 
