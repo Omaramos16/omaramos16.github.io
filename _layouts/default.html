@@ -33,13 +33,24 @@
         </nav> -->
 
         <nav class="nav-links">
-          <a href="#top" class="nav-button">🏠 Home</a>
-          <a href="#skills" class="nav-button">🧑‍💻 Technical Skills</a>
-          <a href="#projects" class="nav-button">🛠 Projects</a>
-          <a href="#coursework" class="nav-button">📚 Education & Coursework</a>
-          <a href="https://drive.google.com/file/d/14GJZiN4UaIgkhx-_XF7XPvlJj4fAoSld/view?usp=sharing" 
+          {% if page.url == "/" %}
+            <!-- ✅ We're on the home page, so show all section buttons -->
+            <a href="#top" class="nav-button">🏠 Home</a>
+            <a href="#skills" class="nav-button">🧑‍💻 Technical Skills</a>
+            <a href="#projects" class="nav-button">🛠 Projects</a>
+            <a href="#coursework" class="nav-button">📚 Education & Coursework</a>
+            <a href="#about" class="nav-button">📝 About Me & Contact</a>
+          {% else %}
+            <!-- 🚀 We're NOT on the home page, so show "Back to Projects" -->
+            <a href="/#projects" class="nav-button">⬅️ Back to Projects</a>
+          {% endif %}
+        
+          <!-- 📄 Resume link stays the same everywhere -->
+          <a href="https://drive.google.com/file/d/{{ site.google_drive_resume }}/view?usp=sharing" 
              class="nav-button" target="_blank" rel="noopener noreferrer">📄 Download Resume</a>
-        </nav>        
+        </nav>
+        
+              
 
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>

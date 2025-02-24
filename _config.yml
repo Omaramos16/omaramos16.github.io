@@ -1,18 +1,8 @@
 title: Omar Ramos Escoto
-# description: Smart Product Designer
 theme: jekyll-theme-minimal
 logo: /assets/images/omar_ramos_circle.png
 
 include:
-  - assets/css/custom.css
+  - assets/css/style.scss
 
-# Navigation Bar
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "Coursework"
-    url: "/coursework/"
-  - title: "Resume"
-    url: "/resume/"
+google_drive_resume: "14GJZiN4UaIgkhx-_XF7XPvlJj4fAoSld"

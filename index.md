@@ -15,7 +15,7 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
   <a href="https://linkedin.com/in/omarramosescoto/" target="_blank" rel="noopener noreferrer" class="contact-button">💼 LinkedIn</a>
-  <a href="https://drive.google.com/file/d/14GJZiN4UaIgkhx-_XF7XPvlJj4fAoSld/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-button">📄 View My Resume</a>
+  <a href="https://drive.google.com/file/d/{{ site.google_drive_resume }}/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-button">📄 View My Resume</a>
 </div>
 
 <br />  
@@ -29,8 +29,7 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
   - [⚙️ Mechanical Systems Design and Fabrication Projects](#️-mechanical-systems-design-and-fabrication-projects)
 - [📖 Education](#-education)
 - [📚 Relevant Coursework](#-relevant-coursework)
-- [🏆 About Me](#-about-me)
-- [📬 Get in Touch](#-get-in-touch)
+- [🏆 About Me \& Get in Touch](#-about-me--get-in-touch)
 
 <br />
 
@@ -478,26 +477,20 @@ Click on a project to learn more!
 ---
 
 <br />
-# 🏆 About Me  
+<div id="about"></div> 
+# 🏆 About Me & Get in Touch  
 
-I love building **embedded systems and robotics that seamlessly integrate hardware and software** to solve real-world challenges. My focus is on designing **robust, high-performance systems** for automation, robotics, and intelligent devices.  
+I love being a generalist—understanding how things work and how to make them work better. Whether it’s writing low-level firmware, designing circuits, mechanical design, or optimizing AI-driven systems, I enjoy tackling every step of the process. For me, engineering isn’t just about solving problems—it’s about finding (or creating) interesting ones to solve.  
 
-Beyond engineering, I’m passionate about **mentorship and leadership in STEM**. I teach AI/ML to high school students at [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provide college and high school tutoring in engineering and mathematics through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, where I’ve completed hundreds of hours of instruction with a 5-star rating.  
+Beyond engineering, I’m passionate about teaching and mentorship. I’ve taught AI/ML to high school students through [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provided engineering and math tutoring through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, completing hundreds of hours of instruction with a 5-star rating. At Stanford, I helped organize hands-on workshops, foster technical communities, and support first-generation students in STEM like myself.  
 
-At Stanford, I held **leadership and mentorship roles**, organizing hands-on workshops, fostering technical communities, and supporting first-generation students in STEM.  
-
-Outside of engineering, I enjoy **designing & building things**, reading, playing guitar, hiking, and soccer. 
+When I’m not building things, you’ll probably find me playing guitar, reading, hiking, or kicking a soccer ball around.  
 
 <div class="image-container">
-  <img src="assets/images/personal_pic.jpg" alt="Omar">
-</div> 
-<br /> 
+  <img src="assets/images/personal_pic1.JPG" alt="Personal Picture">
+</div>
 
----
-<br />
-# 📬 Get in Touch  
-
-If you're working on **robotics, embedded systems, or smart product design**, I'd love to chat!  
+If you’re working on something exciting in robotics, embedded systems, or hardware/software integration, I’d love to connect!  
 
 📩 **Email:** [ramos16@alumni.stanford.edu](mailto:ramos16@alumni.stanford.edu){:target="_blank"}  
 💼 **LinkedIn:** [linkedin.com/in/omarramosescoto/](https://linkedin.com/in/omarramosescoto/){:target="_blank"}  
