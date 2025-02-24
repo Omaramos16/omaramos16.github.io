@@ -487,6 +487,10 @@ Beyond engineering, I’m passionate about **mentorship and leadership in STEM**
 At Stanford, I held **leadership and mentorship roles**, organizing hands-on workshops, fostering technical communities, and supporting first-generation students in STEM.  
 
 Outside of engineering, I enjoy **designing & building things**, reading, playing guitar, hiking, and soccer. 
+
+<div class="image-container">
+  <img src="assets/images/personal_pic.jpg" alt="Omar">
+</div> 
 <br /> 
 
 ---
