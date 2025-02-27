@@ -20,9 +20,7 @@ title: CS225A - Baseball Batting Robot Simulation
 
 ## 📖 **Project Summary**  
 
-This project was part of **CS225A: Experimental Robotics**, where my team developed a **human-in-the-loop robotic batting simulation** using the **SAI2 framework**. The system simulated a Panda robotic arm with a bat attachment, using **real-time physics, collision detection, and trajectory calculations** to hit virtual baseballs.  
-
-The key innovation was enabling *real-world human interaction* with a simulated robot. A user controlled ball launches in real-time using OptiTrack motion tracking and a glove-mounted button, with the simulated Panda arm reacting dynamically to execute a swing.  
+This project was part of *CS225A: Experimental Robotics*, where we developed a **real-time, physics-based robotic batting simulation**. The system integrates **human-in-the-loop control with robot dynamics and real-world tracking**, allowing a user to throw a virtual ball using motion capture while a simulated Panda robotic arm dynamically reacts to swing.
 
 ---
 
@@ -45,8 +43,8 @@ The key innovation was enabling *real-world human interaction* with a simulated 
 - Ensured **clean thread joining and shutdown handling** for stable execution.  
 
 **Simulation & URDF Modeling**  
-- Integrated *ew collision geometry for bat-ball interactions to improve realism.  
-- Tuned mass, inertia, and damping properties for realistic ball flight.  
+- Modified the Panda URDF model to include a bat attachment with custom collision geometry, ensuring accurate swing interactions with the virtual ball.
+- Adjusted mass, inertia, and damping properties for realistic bat motion and impact forces. 
 
 **OptiTrack Motion Capture Integration**  
 - Processed hand-tracking data from OptiTrack cameras to determine release velocity.  
@@ -149,4 +147,3 @@ Since these components were running in parallel, I implemented mutexes (locks) a
   <li>🔗 <a href="https://github.com/aby25jose/cs225a-baseball" target="_blank">GitHub Repository</a></li>
   <li>🔗 <a href="https://khatib.stanford.edu/projects/controlandsimulation.html" target="_blank">SAI2</a></li>
 </ul>
-

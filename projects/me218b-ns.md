@@ -22,7 +22,7 @@ title: SQRL (Nuttin' Special)
 
 # System for Quick Removal of Litter (SQRL) - *Nuttin' Special*
 
-*Nuttin' Special* is an autonomous mobile robot designed to dominate the 2024 HOA Most Beautiful Lawn awards. Tasked with transporting ACORNs (*A Cylindrical Object Representing a Nut*), the robot leverages advanced beacon detection, precise line-following algorithms, and robust control systems to outmaneuver the competition. Its dual PIC32 microcontroller architecture, driven by SPI communication and hierarchical state machines (HSMs), ensures real-time decision-making and precision movement powered by finely tuned PID control loops.  
+*Nuttin' Special* is an autonomous mobile robot designed for precision object transport in a competitive robotics challenge. Tasked with collecting and delivering ACORNs (A Cylindrical Object Representing a Nut), the robot utilizes advanced beacon detection, precise line-following algorithms, and robust control systems to navigate autonomously. Its dual PIC32 microcontroller architecture, driven by SPI communication and hierarchical state machines (HSMs), enables precise navigation and real-time control, optimizing both speed and accuracy in object retrieval.
 
 ---
 
@@ -47,7 +47,7 @@ title: SQRL (Nuttin' Special)
 
 ## 👤 **My Role & Key Contributions**
 
-- **Full Software Development:** Designed and implemented the complete embedded software stack, including HSMs, FSMs, SPI communication, UART debugging, and PID control algorithms.  
+- **End-to-End Embedded Software Development:** Designed and implemented the full software stack, including HSMs/FSMs, low-level drivers, SPI communication, UART debugging, and PID control algorithms.  
 - **Embedded Systems & Integration Lead:** Led hardware-software integration, ensuring seamless coordination between mechanical, electrical, and software components.  
 - **Autonomous Navigation & Control:** Developed localization strategies using IR beacon detection, line-following algorithms, and real-time encoder feedback.  
 - **Sensor Noise Reduction:** Enhanced line-following reliability through digital filtering (moving average filters) combined with mechanical optimizations.  
@@ -56,7 +56,7 @@ title: SQRL (Nuttin' Special)
   - Optimized limit switch placement (*improved tree-parking accuracy from 70% to 95%*)  
   - Designed 3D-printed spacers for consistent light sensor alignment  
 - **Electrical System Optimization:**  
-  - Suggested gain resistor adjustments for beacon sensing (*boosted localization success from 75% to 100%*)  
+  - Optimized beacon detection algorithms, refining gain resistor values to significantly improve localization accuracy (*75% → near-perfect detection*). 
   - Configured servo multiplexing to maximize limited microcontroller resources  
 - **Strategic Architecture Design:** Pioneered the use of a dedicated follower PIC for centralized motor control, enabling advanced PID algorithms for straight-line driving.  
 - **Technical Documentation:** Created and maintained project documentation, including the project website, system architecture diagrams, and technical logs.  

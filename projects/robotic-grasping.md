@@ -18,9 +18,7 @@ title: Learning Visual Affordances for Robotic Grasping
 </div>
 
 ## 📖 **Project Summary**  
-This project explores **affordance-based grasping**, where a **neural network predicts the best graspable points in images**.  
-Using a **fully convolutional MiniUNet**, the system generates **affordance maps**—highlighting optimal grasp locations—  
-and refines its actions through **pose estimation and test-time learning**.  
+This project explores **affordance-based robotic grasping**, where a **neural network predicts the best graspable points from visual input**. Unlike traditional grasping approaches that rely on predefined heuristics, this method allows a robot to **adapt to novel objects and cluttered environments in real time.**
 
 To evaluate real-world applicability, the model was tested in **PyBullet** on both **seen and unseen objects**,  
 demonstrating **strong generalization** despite a small training dataset. Additionally, a **failure suppression strategy**  
@@ -67,12 +65,15 @@ was implemented, allowing the robot to **adapt in real time** and recover from r
 ---
 
 ## 🚩 **Challenges & Solutions**  
-- **Repeated grasp failures on certain objects**  
-  - Introduced a **past-failure memory**, allowing the robot to select alternative grasp points.  
 
-- **Difficulty handling cluttered environments**  
-  - Improved **data augmentation** techniques to enhance robustness to unseen objects.  
+### **Repeated Grasp Failures on Certain Objects**  
+- **Problem:** The network often selected **visually similar grasp points**, leading to repeated failures.  
+- **Solution:** Introduced a **past-failure memory**, enabling the robot to prioritize **alternative grasp points** after a failed attempt.  
 
-- **Pose estimation errors led to grasp misalignment**  
-  - Integrated **Iterative Closest Point (ICP)** to refine 3D object alignment.  
+### **Difficulty Handling Cluttered Environments**  
+- **Problem:** Objects were often **occluded**, reducing grasp success.  
+- **Solution:** Used **data augmentation techniques** to improve model robustness and enhance generalization to unseen objects.  
 
+### **Pose Estimation Errors Led to Grasp Misalignment**  
+- **Problem:** Initial pose estimates caused the robot to **miss objects or collide with them**.  
+- **Solution:** Integrated **Iterative Closest Point (ICP)** to refine **3D object alignment before grasp execution**.  

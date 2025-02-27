@@ -2,19 +2,29 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap');
 
-/* ========================================================================== 
+
+/* ==========================================================================
    GLOBAL STYLES (Typography, Colors, Layout)
    ========================================================================== */
-
 
 body {
   background-color: #ffffff;
   padding: 50px;
-  font: 14px/1.6 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 14px;
+  line-height: 1.5;
   color: #222; /* Normal Text Color */
   font-weight: 400;
 }
+
+/* Adjust Bold Text */
+strong, b {
+  font-weight: 600;
+  opacity: 0.9;
+}
+  
 
 html {
   scroll-behavior: smooth;

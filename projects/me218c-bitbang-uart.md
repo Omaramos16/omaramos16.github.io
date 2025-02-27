@@ -6,7 +6,7 @@ title: Bit-Banged UART in Assembly
 ## 🚀 **Project Overview**  
 - **Project Name:** Bit-Banged UART using Assembly
 - **Technologies:** Assembly, Software UART, Interrupt-Driven Communication, PIC10F322, MPLAB X  
-- **Key Focus:** Software-based serial communication without a hardware UART  
+- **Key Focus:** Developing a fully software-implemented UART on a microcontroller without built-in UART hardware, requiring precise bit-banging transmission and interrupt-driven reception.
 - **Class:** ME218C: Smart Product Design Applications  
 
 ---
@@ -18,7 +18,7 @@ This project implements a **software-based UART (bit-banged)** entirely in assem
 ✔ **Bit-banged TX:** Manually generates start, data, and stop bits via software.  
 ✔ **Interrupt-driven RX:** Detects incoming data via edge interrupts and samples at **1.5 bit-time intervals**.  
 ✔ **Uses a Numerically Controlled Oscillator (NCO) for baud rate timing.**  
-✔ **Receives serial data, converts it to uppercase, and retransmits it.**  
+✔ **Receives, processes, and retransmits ASCII serial data in real-time**, demonstrating full-duplex communication handling entirely in software. 
 
 ---
 
@@ -47,7 +47,7 @@ This project implements a **software-based UART (bit-banged)** entirely in assem
   - *Challenge:* Reading bits at the **wrong moment** could result in corrupted data.  
   - *Solution:* Used a **1.5 bit-time sampling strategy** via **Timer2 interrupts** to read bits at the correct moment.  
 
-- **🛠️ Debugging Without Traditional Serial Print Statements**  
+- **🛠️ Validating UART Timing and Synchronization Using a Logic Analyzer**  
   - *Challenge:* No hardware UART means no printf debugging.  
   - *Solution:* Used a **logic analyzer** to validate TX waveform & verify timing accuracy.  
 

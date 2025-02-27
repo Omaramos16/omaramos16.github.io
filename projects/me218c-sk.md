@@ -12,7 +12,7 @@ title: Super KARLio
 - **Duration:** ~3 weeks  
 - **Key Contributions:** System Architecture, Embedded Software, Wireless Protocols, Electrical Design, Mechanical Integration  
 - **Theme:** Inspired by *Super Mario Sunshine*  
-- **Documentation:** [Project Website](https://superkarlio.weebly.com/)  
+- **Documentation:** [Project Website](https://superkarlio.weebly.com/){:target="_blank"}  
 - **🎥 Demo:**  
 <div class="video-container">  
   <iframe src="https://www.youtube.com/embed/dUoI39grSPE" frameborder="0" allowfullscreen></iframe>  
@@ -87,31 +87,35 @@ As the **Embedded Systems & Controller Design Lead**, I was responsible for the 
     - **Hardware Debouncing:** Reduces false triggers, ensuring responsive control.  
     - **Expandability:** Reserved wiring for future button additions.
 
----
-
-### 🚀 **Impact of My Electronics Design**  
-- **Improved Reliability:** Crimped connectors, optimized power routing, and noise-resistant designs enhanced system stability.  
-- **Power Efficiency:** Resource-sharing and effective power management reduced energy waste.  
-- **Robust Data Transmission:** Buffered UART and SPI signals ensured seamless wireless control with minimal latency.  
-- **Modularity:** Easy disassembly and debugging due to modular wiring and connector design.
 
 ---
 
 ## 🚩 **Key Challenges & Solutions**  
 
-- **Wireless Reliability:** Resolved data loss with UART interrupt handling and antenna optimization.  
-- **Signal Noise:** Mitigated noisy accelerometer data using analog filters and digital smoothing algorithms.  
-- **Power Distribution Issues:** Improved power integrity with decoupling capacitors and optimized grounding.  
-- **Mechanical Durability:** Designed for frequent gameplay with strain-relieved connectors and reinforced structures.  
-- **Limited Microcontroller Resources:** Efficiently multiplexed SPI signals and optimized GPIO usage.
+✅ **Ensuring Low-Latency Wireless Communication**  
+- *Problem:* Initial XBee setup suffered **delayed responses** due to inefficient polling.  
+- *Solution:* Implemented **UART interrupt-driven transmission**, reducing **latency by ~40%**.  
+
+✅ **Mitigating Signal Noise in Accelerometer-Based Refueling**  
+- *Problem:* Raw sensor data was **highly sensitive to vibration and external motion**.  
+- *Solution:* Applied **analog filtering + digital moving averages** for stability.  
+
+✅ **Optimizing Power Distribution & Grounding**  
+- *Problem:* Early iterations **suffered from voltage fluctuations** affecting servo stability.  
+- *Solution:* Used **decoupling capacitors + twisted-pair routing** to **reduce EMI & voltage dips**.  
+
+✅ **Mechanical Durability & Controller Usability**  
+- *Problem:* Early prototypes lacked **strain relief**, leading to **wiring failures under stress**.  
+- *Solution:* **Redesigned wiring with reinforced DB9 connectors** and **built-in strain relief**.  
 
 ---
 
 ## 🌟 **Project Highlights**  
-- **End-to-End System Development:** Led NEDMO’s full-stack design across software, electronics, and mechanical domains.  
-- **Innovative Refueling System:** Created a motion-based refueling mechanism with analog signal processing.  
-- **Wireless Control Mastery:** Designed low-latency communication protocols using XBee modules.  
-- **Cross-Disciplinary Engineering:** Balanced embedded systems design with mechanical usability and aesthetics.  
+✔ **End-to-End Embedded System:** Designed **firmware, communication protocols, and hardware integration**.  
+✔ **Low-Latency Wireless Control:** Achieved **responsive bidirectional communication** with **interrupt-based UART XBee protocols**.  
+✔ **Analog Signal Processing for Motion-Based Input:** Built a **real-time accelerometer-driven refueling mechanism**.  
+✔ **Cross-Disciplinary Engineering:** Balanced **embedded design, wireless protocols, and mechanical integration**.  
+
 
 ---
 

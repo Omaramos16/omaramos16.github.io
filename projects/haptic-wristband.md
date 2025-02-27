@@ -22,7 +22,7 @@ title: Wrist-Worn Haptic Device
 
 # **Wrist-Worn Haptic Device for Motion Guidance**  
 
-This project focused on developing a wrist-worn haptic device capable of providing real-time motion guidance through vibrotactile feedback. The device consists of an array of vibration motors positioned around the arm, controlled via PWM signals and responding to real-time IMU data. It was designed to be a modular and adaptable platform for assistive technology applications, such as improving gait patterns for individuals with mobility impairments.
+This project focused on developing a wrist-worn haptic device capable of providing real-time motion guidance through vibrotactile feedback, enabling intuitive, non-visual communication of movement cues. Designed for assistive technology and rehabilitation, the system integrates IMU-driven feedback, wireless control, and miniaturized electronics into a compact wearable device.
 
 ---
 
@@ -80,16 +80,16 @@ This project focused on developing a wrist-worn haptic device capable of providi
 ## 🚩 **Key Challenges & Solutions**  
 
 - **Bluetooth Communication Limitations**  
-  - *Challenge:* The Arduino Nano 33 IoT only supported BLE, which was too slow for real-time haptic feedback.  
-  - *Solution:* Reflashed the ESP32 firmware to enable **Classic Bluetooth**, allowing faster and more reliable communication.  
+  - *Challenge:* The Arduino Nano 33 IoT only supported BLE, which introduced latency too high for real-time haptic feedback.
+  - *Solution:* Reflashed the ESP32 firmware to enable **Classic Bluetooth**, achieving significantly reduced latency and smoother haptic updates.
 
 - **Power Instability Due to Motor Load Fluctuations**  
-  - *Challenge:* Rapid motor actuation caused power fluctuations that occasionally reset the microcontroller.  
-  - *Solution:* Integrated **decoupling capacitors** and a **DC-DC step-up module** to ensure stable voltage levels.  
+  - *Challenge:* Rapid motor actuation caused voltage drops, occasionally resetting the microcontroller and disrupting real-time operation.  
+  - *Solution:* Integrated **decoupling capacitors** and a **DC-DC step-up module**, ensuring stable voltage levels and preventing unexpected resets during high-power motor activation. 
 
 - **PWM Control & Hardware Evolution**  
-  - *Challenge:* The Arduino had limited PWM outputs, requiring a method to drive multiple motors efficiently.  
-  - *Solution:* Initially used an **I2C-based PWM driver** (PCA9685) to expand output capabilities, then later optimized the design to use a **ULN2803 Darlington Driver** when fewer motors were required.  
+  - *Challenge:* The Arduino had limited PWM outputs, requiring an external I2C-based PCA9685 PWM driver to control multiple motors. 
+  - *Solution:* After testing, we determined fewer motors were needed than originally planned, allowing me to switch to a ULN2803 Darlington Driver, which **simplified the circuit, eliminated I2C overhead, and reduced power consumption**.
 
 - **I2C-Based Peripheral Communication**  
   - *Challenge:* The system needed to interface with multiple components while keeping pin usage low.  

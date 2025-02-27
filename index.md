@@ -6,11 +6,12 @@ title: Omar Ramos Escoto
 
 # Omar Ramos Escoto  <!-- omit in toc -->
 
-### 🚀 Embedded Systems \| Mechatronics \| Robotics 🚀 <!-- omit in toc -->
+### 🚀 Embedded Systems \| Robotics \| Hardware-Software Integration 🚀   <!-- omit in toc -->
 
-I am a **Stanford University M.S. in Mechanical Engineering and B.S. in Computer Science graduate with a focus on embedded systems, robotics, and hardware-software integration**. My work revolves around designing high-performance embedded systems, developing real-time firmware, and implementing microcontroller architectures for intelligent automation.  
+I am a **Stanford University M.S. in Mechanical Engineering and B.S. in Computer Science graduate** with a focus on **embedded systems, robotics, and hardware/software integration**. My work revolves around **real-time firmware development, embedded architectures, and motion control** for **intelligent automation, smart devices, and mechatronic systems**.  
 
-I am **currently exploring opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute my expertise in real-time control, sensor fusion, and system integration. If you are working on innovative projects in these areas, I would love to connect!  
+I am **seeking opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to **firmware development, system integration, and intelligent control systems**. If you're working on exciting projects in these areas, I’d love to connect!  
+
 
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
@@ -22,7 +23,6 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
 
 ### 🔗 Jump To:
 
-- [🧑‍💻 Technical Skills](#-technical-skills)
 - [🛠 Projects](#-projects)
   - [🔌 Embedded Systems and Electro-Mechanical Projects](#-embedded-systems-and-electro-mechanical-projects)
   - [🤖 Software, AI, and Machine Learning Projects](#-software-ai-and-machine-learning-projects)
@@ -36,22 +36,22 @@ I am **currently exploring opportunities in embedded systems, robotics, and hard
 ---
 <div id="skills"></div> 
 <br/>
-# 🧑‍💻 Technical Skills  
 
+## 🧑‍💻 Technical Skills  
 **Programming & Software**  
 - Embedded C (PIC32, ARM Cortex, STM32), C++, Python, MATLAB, Verilog  
-- ROS, PyBullet, SAI2 Framework, OpenCV, PyTorch  
-- Linux Systems, Multi-Threaded Programming, Real-Time Signal Processing  
+- ROS, PyBullet, SAI2 Framework, OpenCV, PyTorch
+- Linux Systems, Multi-Threaded Programming, Real-Time Signal Processing
 
 **Embedded Systems & Digital Design**  
-- Microcontrollers (PIC, ARM, STM32, ESP32), PCB Design (KiCad)  
-- Circuit Debugging, Wireless Communication (Bluetooth, XBee, SPI, I2C, UART)  
-- Digital Logic & FPGA Concepts (Verilog, Finite State Machines)  
+- Microcontrollers (PIC, ARM, STM32, ESP32), FPGA Design (Verilog, Finite State Machines) 
+- Schematic Design (KiCad), Circuit Debugging, PCB Prototyping
+- Peripheral Interfaces: SPI, I2C, I2S, UART, Bluetooth, ZigBee, RF 
 
 **Robotics & Control Systems**  
-- PID Control, State Estimation, Sensor Fusion (IMUs)  
-- Motion Planning, Compliant Control, Haptic Systems  
-- Perception-Based Control, AI-Assisted Robotics  
+- PID Control, Sensor Fusion, State Estimation
+- Motion Planning, Perception-Based Control, Haptic Systems
+- Simulation & Modeling (PyBullet, SAI2, Gazebo)  
 
 **Mechanical Design & Prototyping**  
 - CAD (Fusion 360, SolidWorks), FEA, Structural Analysis  
@@ -110,18 +110,6 @@ Click on a project to learn more!
         </a>
     </div>
     <div class="project-card">
-        <a href="projects/me210-robowski.html">
-            <img src="/assets/images/me210-robowski/210-main.jpg" alt="Big Robowski Thumbnail">
-            <div class="card-content">
-                <h3>The Big Robowski</h3>
-                <p>Arduino-Based Robotics | IR Localization | Mecanum Wheel Control</p>
-            </div>
-            <div class="overlay-info">
-                Autonomous bowling robot using IR beacon tracking, ultrasonic positioning, and an omnidirectional mecanum drive for high-speed, precision scoring.
-            </div>
-        </a>
-    </div>
-    <div class="project-card">
         <a href="projects/haptic-wristband.html">
             <img src="../assets/images/haptic_device/charm_main.jpeg" alt="Haptic Wristband Thumbnail">
             <div class="card-content">
@@ -134,14 +122,26 @@ Click on a project to learn more!
         </a>
     </div>
     <div class="project-card">
-        <a href="projects/engr210-DUG.html">
-            <img src="/assets/images/engr210-DUG/DUG_Final.JPG" alt="DUG Project Thumbnail">
+        <a href="projects/me218c-bitbang-uart.html">
+            <img src="/assets/images/uart_assembly/uart_assembly.png" alt="Bit-Banged UART Thumbnail">
             <div class="card-content">
-                <h3>DUG - Service Dog Communication Device</h3>
-                <p>User-Centered Design | Assistive Technology | Embedded Prototyping</p>
+                <h3>Bit-Banged UART</h3>
+                <p>Assembly Language | Full-Duplex UART | Interrupt-Driven RX</p>
             </div>
             <div class="overlay-info">
-                Bluetooth-enabled communication device designed for service dog owners, allowing them to prevent distractions using customizable pre-recorded messages.
+                Implemented full-duplex UART in assembly on a PIC10F322, featuring bit-banged transmission, interrupt-driven reception, and precise baud rate control using an NCO.
+            </div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="projects/me210-robowski.html">
+            <img src="/assets/images/me210-robowski/210-main.jpg" alt="Big Robowski Thumbnail">
+            <div class="card-content">
+                <h3>The Big Robowski</h3>
+                <p>Arduino-Based Robotics | IR Localization | Mecanum Wheel Control</p>
+            </div>
+            <div class="overlay-info">
+                Autonomous bowling robot using IR beacon tracking, ultrasonic positioning, and an omnidirectional mecanum drive for high-speed, precision scoring.
             </div>
         </a>
     </div>
@@ -156,16 +156,16 @@ Click on a project to learn more!
                 Hands-on sensor experiments and real-world assistive technology system design, leveraging IMU data, motion tracking, and feasibility analysis.
             </div>
         </a>
-    </div>
+    </div>    
     <div class="project-card">
-        <a href="projects/me218c-bitbang-uart.html">
-            <img src="/assets/images/uart_assembly/uart_assembly.png" alt="Bit-Banged UART Thumbnail">
+        <a href="projects/engr210-DUG.html">
+            <img src="/assets/images/engr210-DUG/DUG_Final.JPG" alt="DUG Project Thumbnail">
             <div class="card-content">
-                <h3>Bit-Banged UART</h3>
-                <p>Assembly Language | Full-Duplex UART | Interrupt-Driven RX</p>
+                <h3>DUG - Service Dog Communication Device</h3>
+                <p>User-Centered Design | Assistive Technology | Embedded Prototyping</p>
             </div>
             <div class="overlay-info">
-                A fully software-implemented UART (TX & RX) in assembly on a PIC10F322, featuring bit-banging transmission, interrupt-driven reception, and NCO-based baud rate control.
+                Bluetooth-enabled communication device designed for service dog owners, allowing them to prevent distractions using customizable pre-recorded messages.
             </div>
         </a>
     </div>

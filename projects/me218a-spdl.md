@@ -22,13 +22,13 @@ title: SPDL
 
 ## 📖 **Project Summary**  
 
-The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit design for mechatronics and signal processing applications. It automates the creation of eight fundamental circuits—including Op-Amp amplifiers and comparator configurations—by calculating component values, generating schematics, and recommending precise parts based on user-defined parameters. SPDL eliminates complex manual calculations, making circuit design faster and more accessible.
+The Smart Portable Electronics Design Locker (SPDL) automates and accelerates analog circuit prototyping by eliminating manual calculations and component selection errors. By dynamically generating schematics, optimizing part selection, and automating circuit validation, SPDL simplifies circuit design for mechatronics and signal processing applications.
 
 ---
 
 ## 🛠️ **Key Technologies & Concepts**  
 - Embedded C/C++  
-- Finite State Machines (FSMs) using UML Design  
+- Event-Driven Finite State Machines (FSMs) for Modular, Real-Time Control using UML Design  
 - SPI Communication Protocol Implementation  
 - Analog Sensors & Actuators  
 - Real-Time Interrupt Handling & Event-Driven Programming  
@@ -44,7 +44,7 @@ The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit d
 ## 👤 **My Role & Key Contributions**
 
 - **Embedded Systems & Integration Lead:** Designed modular, event-driven FSMs for robust, real-time system behavior and led system-level integration across hardware and software components.  
-- **SPI Communication & Display Control:** Developed low-level drivers for LED arrays over a single SPI line, optimizing buffer management, synchronization, and data transitions.  
+- **SPI Communication & Multi-Device Display Control:** Developed low-level SPI drivers to handle multiple LED arrays on a shared bus, optimizing buffer synchronization and reducing flickering.
 - **System Reliability:** Engineered robust boot/recovery protocols for resilience against resets and power fluctuations.
 - **Numerical Optimization:** Improved calculation accuracy using fixed-point arithmetic for embedded systems with limited floating-point support.  
 - **Cross-Disciplinary Impact:** Contributed to mechanical design ideation (CD-drive-based dispensing system) and electrical troubleshooting (signal denoising, noise reduction strategies).  
@@ -64,7 +64,7 @@ The Smart Portable Electronics Design Locker (SPDL) streamlines analog circuit d
 
 - **FSM Reset Integrity:**  
   - *Challenge:* Ensuring reliable resets after timeouts or power cycles.  
-  - *Solution:* Designed robust state-reset protocols, maintaining system stability in real-time conditions.  
+  - *Solution:* Designed fail-safe state-reset protocols to maintain system integrity after power cycles or unexpected resets, ensuring continuous operation without manual intervention.
 
 - **Mechanical Design for Reliable Dispensing:**  
   - *Challenge:* Designing a compact, reliable dispensing mechanism with sufficient throw. 
