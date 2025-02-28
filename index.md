@@ -23,6 +23,7 @@ I am **seeking opportunities in embedded systems, robotics, and hardware/softwar
 
 ### 🔗 Jump To:
 
+- [🧑‍💻 Technical Skills](#-technical-skills)
 - [🛠 Projects](#-projects)
   - [🔌 Embedded Systems and Electro-Mechanical Projects](#-embedded-systems-and-electro-mechanical-projects)
   - [🤖 Software, AI, and Machine Learning Projects](#-software-ai-and-machine-learning-projects)
@@ -37,7 +38,7 @@ I am **seeking opportunities in embedded systems, robotics, and hardware/softwar
 <div id="skills"></div> 
 <br/>
 
-## 🧑‍💻 Technical Skills  
+# 🧑‍💻 Technical Skills  
 **Programming & Software**  
 - Embedded C (PIC32, ARM Cortex, STM32), C++, Python, MATLAB, Verilog  
 - ROS, PyBullet, SAI2 Framework, OpenCV, PyTorch
