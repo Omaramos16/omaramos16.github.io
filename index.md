@@ -8,9 +8,9 @@ title: Omar Ramos Escoto
 
 ### 🚀 Embedded Systems \| Robotics \| Hardware-Software Integration 🚀   <!-- omit in toc -->
 
-I am a **Stanford University M.S. in Mechanical Engineering and B.S. in Computer Science graduate** with a focus on **embedded systems, robotics, and hardware/software integration**. My work revolves around **real-time firmware development, embedded architectures, and motion control** for **intelligent automation, smart devices, and mechatronic systems**.  
+I am a **Stanford University M.S. in Mechanical Engineering and B.S. in Computer Science graduate**. My work revolves around real-time firmware development, embedded architectures, and motion control for intelligent automation, smart devices, and mechatronic systems.  
 
-I am **seeking opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to **firmware development, system integration, and intelligent control systems**. If you're working on exciting projects in these areas, I’d love to connect!  
+I am **seeking opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to firmware development, system integration, and intelligent control systems. If you're working on exciting projects in these areas, I’d love to connect!  
 
 
 <div class="contact-buttons">
