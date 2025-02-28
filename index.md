@@ -41,6 +41,7 @@ I am **seeking opportunities in embedded systems, robotics, and hardware/softwar
 **Programming & Software**  
 - Embedded C (PIC32, ARM Cortex, STM32), C++, Python, MATLAB, Verilog  
 - ROS, PyBullet, SAI2 Framework, OpenCV, PyTorch
+- Version Control: Git, GitHub, Bitbucket
 - Linux Systems, Multi-Threaded Programming, Real-Time Signal Processing
 
 **Embedded Systems & Digital Design**  
