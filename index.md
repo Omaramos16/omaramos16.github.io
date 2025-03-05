@@ -344,7 +344,7 @@ Click on a project to learn more!
 **M.S. in Mechanical Engineering (Mechatronics) - GPA: 4.0**  
 📍 Mar 2023 – Jun 2024 | Stanford, CA  
 
-**B.S. in Computer Science (Robotics & Mechatronics Track) - GPA: 3.8**
+**B.S. in Computer Science (Robotics & Mechatronics Track) - GPA: 3.8**<br>
 **Minor in Mechanical Engineering Design**  
 📍 Sep 2018 – Jun 2024 | Stanford, CA  
 <br/>
