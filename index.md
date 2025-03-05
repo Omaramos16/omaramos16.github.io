@@ -8,10 +8,9 @@ title: Omar Ramos Escoto
 
 ### 🚀 Embedded Systems \| Robotics \| Hardware-Software Integration 🚀   <!-- omit in toc -->
 
-I am a **Stanford University M.S. in Mechanical Engineering and B.S. in Computer Science graduate**. My work revolves around real-time firmware development, embedded architectures, and motion control for intelligent automation, smart devices, and mechatronic systems.  
+I’m a **Stanford M.S./B.S. graduate in Mechanical Engineering & Computer Science with expertise in embedded systems, robotics, and real-time software**. My work focuses on integrating firmware, hardware, and control systems for sensor-driven and electromechanical applications, with a strong background in system architecture, communication protocols, and embedded validation.
 
-I am **seeking opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to firmware development, system integration, and intelligent control systems. If you're working on exciting projects in these areas, I’d love to connect!  
-
+**I’m looking for opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to firmware development, system integration, and intelligent automation. If you’re working on exciting projects in these areas, I’d love to connect!
 
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
@@ -345,7 +344,8 @@ Click on a project to learn more!
 **M.S. in Mechanical Engineering (Mechatronics) - GPA: 4.0**  
 📍 Mar 2023 – Jun 2024 | Stanford, CA  
 
-**B.S. in Computer Science (Robotics & Mechatronics Track), Minor in Mechanical Engineering Design - GPA: 3.8**  
+**B.S. in Computer Science (Robotics & Mechatronics Track) - GPA: 3.8**
+**Minor in Mechanical Engineering Design**  
 📍 Sep 2018 – Jun 2024 | Stanford, CA  
 <br/>
 
