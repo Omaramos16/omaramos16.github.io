@@ -26,78 +26,51 @@ This project focused on developing a wrist-worn haptic device capable of providi
 
 ---
 
-## 🛠️ **Key Technologies & Concepts**  
+## 🛠️ **Engineering Contributions & Key Technologies**  
+
 - **Embedded Systems & Firmware Development**  
-  - Implemented Bluetooth Classic communication on an **Arduino Nano 33 IoT**, replacing the default BLE for increased speed.  
-  - Initially planned for a large number of motors, but the **Arduino Nano 33 IoT lacked enough PWM outputs**. To solve this, I sourced and implemented an **I2C-based PWM driver board** (PCA9685), which allowed motor control with only two I2C pins while supporting multiple outputs.  
-  - After building the physical prototype, we determined that **fewer motors** were needed than originally assumed. This allowed me to **replace the PWM driver with a ULN2803 Darlington array**, simplifying the circuit and enabling direct motor control from the Arduino in the final PCB version.  
-  - Integrated **real-time IMU-based feedback** for dynamic haptic responses.  
+  - Implemented **Bluetooth Classic** on an **Arduino Nano 33 IoT**, replacing default BLE to reduce latency and improve real-time responsiveness.  
+  - Developed **IMU-driven feedback algorithms**, enabling dynamic vibrotactile responses based on motion.  
+  - Addressed PWM limitations on the Arduino by implementing an **I2C-based PCA9685 PWM driver**, later optimizing it to a **ULN2803 Darlington array** after testing revealed fewer motors were needed.
 
-- **Circuit Design & Power Management**  
-  - Designed a power-efficient circuit that allowed all components to operate off a **single LiPo battery**.  
-  - Used a **DC-DC step-up converter** to provide stable power to the microcontroller while isolating motor power.  
-  - Added **decoupling capacitors** to prevent power fluctuations from interfering with the Arduino during rapid motor actuation.  
+- **Circuit & Power Management**  
+  - Designed a **single LiPo battery power system**, integrating a **DC-DC step-up converter** to provide stable voltage to the microcontroller while isolating motor power.  
+  - Added **decoupling capacitors** to suppress voltage drops caused by rapid motor actuation, preventing unintended microcontroller resets.  
+  - Designed a **custom two-layer PCB in KiCad**, reducing circuit size by *40%* while improving durability and power efficiency.   
 
-- **Custom PCB Design for Miniaturization**  
-  - Redesigned the circuit onto a **two-layer PCB in KiCad**, reducing size and improving robustness.  
-  - Incorporated a **ULN2803 8-Channel Darlington Driver** for compact, efficient motor control.  
-  - Designed the PCB to be modular, making it adaptable for multiple CHARM Lab projects.  
+- **Component Selection & Hardware Optimization**  
+  - Selected an **Arduino-compatible microcontroller** with Bluetooth capabilities and adequate processing power.  
+  - Sourced **high-efficiency vibration motors** to deliver optimal haptic feedback.  
+  - Transitioned from **I2C PWM driver (PCA9685) to a ULN2803 Darlington array**, eliminating I2C overhead and reducing power consumption.  
+  - Integrated **I2C communication** for IMU data processing, ensuring efficient sensor fusion while minimizing microcontroller pin usage.  
 
 - **Wearable Integration & Mechanical Design**  
-  - Designed a **3D-printed housing** for the electronics and motors.  
-  - Mounted the system onto a **velcro armband**, allowing motors to be repositioned based on experimental needs.  
-
----
-
-## 👤 **My Role & Key Contributions**  
-
-- **Component Selection & Sourcing**  
-  - Researched and selected an appropriate Arduino with Bluetooth compatibility and sufficient processing power.  
-  - Sourced vibration motors with optimal frequency and intensity for haptic feedback applications.  
-  - Chose a power-efficient LiPo battery and designed the circuit for stable operation under dynamic loads.  
-
-- **Embedded Software Development**  
-  - Enabled **Classic Bluetooth communication** on the Arduino by flashing the ESP32 firmware, achieving higher data rates.  
-  - Initially designed the **PWM control system using an I2C-based PWM driver board (PCA9685)** to expand the number of available motor outputs while minimizing Arduino pin usage.  
-  - After hardware testing revealed fewer motors were needed, redesigned the system to use a **ULN2803 Darlington Driver**, enabling direct motor control from the Arduino in the final PCB version.  
-  - Integrated **I2C communication for both the PWM driver (initial version)** to minimize pin usage and simplify data flow.  
-  - Developed an **IMU-based feedback system**, allowing the device to provide directional haptic cues based on motion.  
-
-- **Power Optimization & Circuit Design**  
-  - Improved power regulation by incorporating a **DC-DC boost converter**, ensuring stable operation of the microcontroller.  
-  - Prevented motor-induced power fluctuations from resetting the Arduino by adding **noise-suppression capacitors**.  
-
-- **Custom PCB Development**  
-  - Designed a **compact two-layer PCB** to consolidate all components into a smaller footprint.  
-  - Transitioned from **I2C PWM driver** to **direct PWM control via a ULN2803 Darlington Driver**, reducing complexity while maintaining efficient motor actuation.  
-
-- **Mechanical Design & Assembly**  
-  - Designed and 3D-printed a **custom enclosure** for the board and motors.  
-  - Mounted all components onto a flexible **wearable armband** for easy testing and user studies.  
+  - Designed a **3D-printed enclosure** for electronics, ensuring compactness and durability.  
+  - Developed a **modular velcro-mounted system**, allowing motors to be repositioned for different user studies.  
 
 ---
 
 ## 🚩 **Key Challenges & Solutions**  
 
-- **Bluetooth Communication Limitations**  
-  - *Challenge:* The Arduino Nano 33 IoT only supported BLE, which introduced latency too high for real-time haptic feedback.
-  - *Solution:* Reflashed the ESP32 firmware to enable **Classic Bluetooth**, achieving significantly reduced latency and smoother haptic updates.
+- **Bluetooth Latency & Communication Stability**  
+  - *Issue:* BLE on the Arduino Nano 33 IoT introduced excessive latency for real-time haptic feedback.  
+  - *Solution:* Flashed **ESP32 firmware to enable Classic Bluetooth**, significantly improving data transmission speed and responsiveness.  
 
-- **Power Instability Due to Motor Load Fluctuations**  
-  - *Challenge:* Rapid motor actuation caused voltage drops, occasionally resetting the microcontroller and disrupting real-time operation.  
-  - *Solution:* Integrated **decoupling capacitors** and a **DC-DC step-up module**, ensuring stable voltage levels and preventing unexpected resets during high-power motor activation. 
+- **Power Fluctuations Resetting MCU**  
+  - *Issue:* High-frequency motor actuation caused voltage drops, intermittently resetting the microcontroller.  
+  - *Solution:* Added **decoupling capacitors** and a **DC-DC step-up converter**, stabilizing voltage and preventing power-related disruptions.  
 
-- **PWM Control & Hardware Evolution**  
-  - *Challenge:* The Arduino had limited PWM outputs, requiring an external I2C-based PCA9685 PWM driver to control multiple motors. 
-  - *Solution:* After testing, we determined fewer motors were needed than originally planned, allowing me to switch to a ULN2803 Darlington Driver, which **simplified the circuit, eliminated I2C overhead, and reduced power consumption**.
+- **PWM Output Limitations**  
+  - *Issue:* The Arduino lacked enough PWM outputs to drive multiple vibration motors.  
+  - *Solution:* Implemented an **I2C-based PCA9685 PWM driver**, later switching to a **ULN2803 Darlington array** after testing showed fewer motors were needed, reducing complexity and I2C overhead.  
 
-- **I2C-Based Peripheral Communication**  
-  - *Challenge:* The system needed to interface with multiple components while keeping pin usage low.  
-  - *Solution:* Implemented **I2C for both the initial PWM driver and external IMU**, ensuring efficient data transfer with minimal microcontroller pin requirements.  
+- **I2C Communication Efficiency**  
+  - *Issue:* The system required multiple peripherals while minimizing microcontroller pin usage.  
+  - *Solution:* Optimized **I2C communication** for both the PWM driver (initially) and IMU, ensuring reliable data transfer with minimal resource overhead.  
 
-- **Minimizing Circuit Size & Weight for Wearability**  
-  - *Challenge:* The initial design was too large and heavy due to multiple breakout boards.  
-  - *Solution:* Designed a **custom PCB**, consolidating components into a smaller and more modular form factor.  
+- **Wearable Size & Weight Reduction**  
+  - *Issue:* The initial prototype was too large and heavy due to multiple breakout boards.  
+  - *Solution:* Designed a **custom two-layer PCB**, consolidating components into a **40% smaller** footprint while improving durability.  
 
 ---
 
@@ -107,8 +80,7 @@ This project focused on developing a wrist-worn haptic device capable of providi
 - **Firmware Development:** C++ (Arduino)  
 - **Communication Protocols:** Bluetooth Classic, I2C, PWM  
 - **Hardware Design Tools:** KiCad (PCB), Oscilloscope for signal analysis  
-- **Mechanical Design:** Fusion 360 (3D-printed enclosure)  
-- **Power Analysis:** LiPo battery optimization, DC-DC step-up conversion  
+- **Mechanical Design:** Fusion 360 (3D-printed enclosure)
 
 **Testing & Validation:**  
 - Verified Bluetooth connectivity & data transmission speeds.  
@@ -117,21 +89,12 @@ This project focused on developing a wrist-worn haptic device capable of providi
 
 ---
 
-## 🌟 **Project Highlights**  
+## 💡 **Reflection & Highlights**  
 
-- Successfully **converted an LED driver board into a motor driver**, reducing computational load on the Arduino.  
-- Designed a **custom PCB**, significantly reducing the device's size and weight.  
-- Implemented **Bluetooth Classic**, enabling real-time haptic feedback communication.  
-- Created a **modular wearable design**, making the device adaptable for future CHARM Lab projects.  
-
----
-
-## 💡 **Reflection & Lessons Learned**  
-
-This project provided hands-on experience in embedded systems, wearable technology, and circuit design. I learned how to:  
-- Debug and modify Bluetooth firmware for **higher-speed communication**.  
-- Optimize **power management** in a system with rapidly changing loads.  
-- Design **modular, adaptable PCBs** for multi-use research applications.  
+This project provided hands-on experience in embedded systems, wearable technology, and circuit design. Some of my highlights were:  
+- Designing a custom PCB that significantly reduced device size and power complexity.
+- Improving haptic response time with Classic Bluetooth & optimized PWM control.
+- Developing a wearable, adaptable design for potential future CHARM Lab research.
 
 This experience has further strengthened my skills in embedded system architecture, PCB design, and wearable device development, preparing me for future work in haptic interfaces and assistive technology.
 
