@@ -6,12 +6,11 @@ title: SQRL (Nuttin' Special)
 ## 🚀 **Project Overview**  
 - **Project Name:** System for Quick Removal of Litter (SQRL) - *Nuttin' Special*  
 - **Role:** Embedded Systems & Integration Lead  
-- **Technologies:** Embedded C/C++, FSMs, HSMs, SPI, UART, PID Control, PIC32, KiCad, MPLAB X, CAD  
+- **Technologies:** Embedded C, FSMs, HSMs, SPI, UART, PID Control, PIC32/Microchip, KiCad, MPLAB X, CAD  
 - **Class:** ME218B: Smart Product Design Applications (Graduate-Level Mechatronics Series)  
 - **Team Size:** 3 members  
 - **Duration:** ~3 weeks  
 - **Key Contributions:** Full Software Development, System Integration, Control Algorithms, Mechanical & Electrical Design Input  
-- **Competition:** Finalist
 - **Documentation:** <a href="https://nuttinspecial.weebly.com/" target="_blank" rel="noopener noreferrer">Project Website</a>  
 
 <div class="image-container">
@@ -22,28 +21,26 @@ title: SQRL (Nuttin' Special)
 
 # System for Quick Removal of Litter (SQRL) - *Nuttin' Special*
 
-*Nuttin' Special* is an autonomous mobile robot designed for precision object transport in a competitive robotics challenge. Tasked with collecting and delivering ACORNs (A Cylindrical Object Representing a Nut), the robot utilizes advanced beacon detection, precise line-following algorithms, and robust control systems to navigate autonomously. Its dual PIC32 microcontroller architecture, driven by SPI communication and hierarchical state machines (HSMs), enables precise navigation and real-time control, optimizing both speed and accuracy in object retrieval.
+
+SQRL is an autonomous mobile robot designed for precision object retrieval in a competitive robotics challenge. It collects and delivers ACORNs (A Cylindrical Object Representing a Nut) using IR beacon detection, line-following, and real-time motion control. A dual-PIC32 microcontroller system, using SPI communication and hierarchical state machines (HSMs) in UML, enables efficient navigation and object manipulation.
 
 ---
 
 ## 🛠️ **Key Technologies & Concepts**  
-- Embedded C/C++  
-- Hierarchical State Machines (HSMs) & Finite State Machines (FSMs)  
-- SPI Communication Protocol (Leader-Follower Architecture)  
-- UART Communication (Debugging, Data Logging with Tera Term)  
-- Real-Time Interrupt Handling & Event-Driven Programming  
-- PID Control for Precision Motor Control  
-- Dual Microcontroller System (PIC32 Leader & Follower)  
-- Digital Signal Processing (Moving Average Filters for Sensor Noise Reduction)  
-- Line Following Algorithms (Reflective Sensor Calibration & Noise Mitigation)  
-- Embedded Systems Architecture & Hardware-Software Co-Design  
-- Resource-Constrained System Optimization (Maximized Timers/PWM Channels)  
+- Embedded C/C++, FSMs & HSMs in UML  
+- SPI-based Leader-Follower Communication  
+- UART Debugging & Data Logging  
+- PID Control for Precision Motor Actuation  
+- Dual PIC32 Microcontroller System  
+- Digital Signal Processing (Noise Filtering)  
+- Line Following & Sensor Calibration  
 - Low-Level Driver Development (Motors, Servos, Sensors)  
-- System Integration Testing & Debugging with KiCad and CAD-Based Prototyping  
-- Direct Stepper Motor Control (full-step through an H-bridge (SN754410))
+- System Integration & Debugging (Oscilloscope, Logic Analyzer)  
+- Manual Stepper Motor Control (H-Bridge SN754410)  
 
 
 ---
+
 
 ## 👤 **My Role & Key Contributions**
 
@@ -51,67 +48,54 @@ title: SQRL (Nuttin' Special)
 - **Embedded Systems & Integration Lead:** Led hardware-software integration, ensuring seamless coordination between mechanical, electrical, and software components.  
 - **Autonomous Navigation & Control:** Developed localization strategies using IR beacon detection, line-following algorithms, and real-time encoder feedback.  
 - **Sensor Noise Reduction:** Enhanced line-following reliability through digital filtering (moving average filters) combined with mechanical optimizations.  
-- **Mechanical Design Impact:**  
-  - Engineered servo-based ACORN positioning (*increased shooting consistency by ~50%*)  
-  - Optimized limit switch placement (*improved tree-parking accuracy from 70% to 95%*)  
-  - Designed 3D-printed spacers for consistent light sensor alignment  
-- **Electrical System Optimization:**  
-  - Optimized beacon detection algorithms, refining gain resistor values to significantly improve localization accuracy (*75% → near-perfect detection*). 
-  - Configured servo multiplexing to maximize limited microcontroller resources  
-- **Strategic Architecture Design:** Pioneered the use of a dedicated follower PIC for centralized motor control, enabling advanced PID algorithms for straight-line driving.  
+- **Mechanical Design Optimization:**  
+  - Designed servo-driven ACORN positioning (*increased shooting consistency by ~50%*).  
+  - Optimized limit switch placement (*tree-parking accuracy improved from 70% → 95%*).  
+  - Created 3D-printed sensor spacers for precise alignment.  
+- **Electrical System Refinements:**  
+  - Tuned beacon detection gain resistors (*boosted localization accuracy to near-perfect*).  
+  - Configured servo multiplexing to maximize microcontroller resources.  
+- **Strategic Architecture Design:** Established dedicated follower MCU for centralized motor control and efficient PID algorithms.  
 - **Technical Documentation:** Created and maintained project documentation, including the project website, system architecture diagrams, and technical logs.  
-- **Competition Achievement:** Led the team to the **final round** of the competition, outperforming most competitors with a robust, reliability-driven strategy.  
 
 ---
 
 ## 🚩 **Key Challenges & Solutions**
 
-- **Real-Time Motor Control with Limited Resources:**  
-  - *Challenge:* Managing multiple motors, servos, and sensors with constrained timers and PWM channels.  
-  - *Solution:* Designed a dual-PIC architecture with optimized resource allocation, including shared PWM lines and centralized PID control.  
+- **Limited MCU Resources for Real-Time Control**  
+  - *Solution:* Designed dual-PIC32 architecture, optimizing PWM allocation and processing constraints.  
 
-- **Sensor Noise Impacting Line Following:**  
-  - *Challenge:* Noisy reflectance sensor data causing unreliable tape detection.  
-  - *Solution:* Applied digital moving average filters and adjusted mechanical sensor placement with custom 3D-printed spacers for consistent performance.  
+- **Noisy Sensor Data Affecting Line Following**  
+  - *Solution:* Applied moving average filtering and optimized sensor placement with 3D-printed spacers.  
 
-- **Inconsistent ACORN Shooting Accuracy:**  
-  - *Challenge:* Pucks getting stuck and inconsistent shooting distances (~50% failure rate).  
-  - *Solution:* Developed a servo-driven positioning mechanism (*increased consistency by ~50%* and eliminated jams).  
+- **ACORN Shooting Inconsistency (~50% failure rate)**  
+  - *Solution:* Developed servo-driven positioning, eliminating jams and improving consistency by *50%*.  
 
-- **Unreliable Tree-Parking Detection:**  
-  - *Challenge:* Inconsistent limit switch triggering, affecting parking under ACORN trees.  
-  - *Solution:* Optimized limit switch placement and enhanced FSM logic for automatic re-alignment (*improved accuracy from 70% to 95%*).  
+- **Unreliable Limit Switch Parking Detection (70% accuracy)**  
+  - *Solution:* Optimized limit switch placement and FSM logic, improving accuracy to *95%*.  
 
-- **Localization Errors with Beacon Detection:**  
-  - *Challenge:* IR beacon sensing inaccuracies, reducing localization success to 75%.  
-  - *Solution:* Diagnosed circuit gain issues and recommended resistor adjustments (*achieved 100% localization accuracy*).  
+- **Localization Errors with IR Beacon Detection**  
+  - *Solution:* Tuned gain resistors, achieving *~100% localization accuracy*.  
 
-- **Manual Stepper Motor Drive Implementation:**  
-  - *Challenge:* Controlling a stepper motor without a driver board, requiring precise manual step sequencing.  
-  - *Solution:* Designed a software-driven stepper control method, directly toggling H-bridge outputs to energize the correct coils for movement.
-
-- **Fine-Tuned PID Control for Encoder-Based Motors:**  
-  - *Challenge:* Achieving smooth and precise robot movement through closed-loop control.  
-  - *Solution:* Experimentally tuned PID gains using real-world robot behavior, optimizing responsiveness and straight-line driving accuracy.
-
+- **Manual Stepper Motor Control (No Driver Board)**  
+  - *Solution:* Designed a custom step-sequencing algorithm, directly toggling H-bridge outputs.  
 
 ---
 
-## 🧰 **Technical Stack & Validation**
+## 🧰 **Technical Stack & Validation**  
 
 - **Microcontroller Development:** PIC32 with MPLAB X IDE  
 - **Version Control:** Bitbucket & Git  
-- **Hardware Design Tools:** KiCad (PCB verification, connection testing)  
-- **3D CAD Tools:** Prototyping for spacers and sensor mounts  
-- **Signal Analysis Tools:** Oscilloscope & Saleae Logic Analyzer  
-- **Debugging Tools:** UART with Tera Term for system testing and real-time logging  
-- **Technical References:** Extensive use of PIC32 datasheets/manuals for SPI, PWM, and peripheral configuration  
+- **Hardware Tools:** KiCad, Oscilloscope, Logic Analyzer  
+- **3D CAD Tools:** Sensor Spacers & Alignment  
+- **Debugging Tools:** UART with Tera Term for real-time logging  
+- **Technical References:** PIC32 Datasheets for SPI, PWM, and Peripheral Config  
 
 **Testing & Validation:**  
-- **Systematic Debugging:** Real-time debugging and sensor calibration using UART logs  
-- **Signal Analysis:** SPI communication and PWM signal validation with oscilloscopes and logic analyzers  
-- **FSM & HSM Testing:** Isolated state machine testing via UART-triggered events  
-- **Integration Testing:** End-to-end system validation under competition conditions  
+- **Systematic Debugging:** Sensor calibration via UART logs & oscilloscope analysis.  
+- **Signal Analysis:** SPI and PWM validation with logic analyzers.  
+- **State Machine Testing:** Isolated HSM logic validation using UART-triggered events.  
+- **Competition-Based Validation:** End-to-end system testing under real-world conditions. 
 
 ---
 
@@ -123,9 +107,11 @@ title: SQRL (Nuttin' Special)
 
 ---
 
-## 💡 **Reflection & Lessons Learned**
 
-*Nuttin' Special* was a transformative project, solidifying my expertise in embedded systems, from hierarchical state machine design to real-time motor control and autonomous navigation. Leading the software development while driving mechanical and electrical optimizations highlighted the importance of cross-disciplinary thinking. The project also deepened my ability to manage resource-constrained systems, where creativity and technical rigor are critical to success.  
+## 💡 **Reflection & Lessons Learned**  
+
+This project reinforced my expertise in embedded systems, hierarchical state machine design, and real-time motor control. Leading software development while driving mechanical and electrical optimizations deepened my ability to manage resource-constrained systems, optimize sensor-driven decision-making, and ensure robust system integration.  
+
 
 ---
 
