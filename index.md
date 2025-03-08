@@ -88,13 +88,13 @@ Click on a project to learn more!
     </div>
     <div class="project-card">
         <a href="projects/me218b-ns.html">
-            <img src="/assets/images/me218b-ns/main-218b.png" alt="Nuttin' Special Thumbnail">
+            <img src="/assets/images/me218b-ns/main-218b.png" alt="SQRL Autonomous Robot Thumbnail">
             <div class="card-content">
-                <h3>System for Quick Removal of Litter (SQRL) - Nuttin’ Special</h3>
-                <p>Autonomous Robotics | PID Control | Dual Microcontroller Architecture</p>
+                <h3>Dual-MCU Robot for Precision Navigation & Object Handling</h3>
+                <p>PID Control | Sensor Fusion | Multi-MCU Coordination</p>
             </div>
             <div class="overlay-info">
-                Autonomous robot with precision PID motor control, dual microcontroller architecture, and real-time navigation algorithms.
+                Autonomous robot with real-time motion planning, PID-controlled actuation, and SPI-based communication between dual microcontrollers.
             </div>
         </a>
     </div>

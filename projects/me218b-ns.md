@@ -27,7 +27,7 @@ SQRL is an autonomous mobile robot designed for precision object retrieval in a 
 ---
 
 ## 🛠️ **Key Technologies & Concepts**  
-- Embedded C/C++, FSMs & HSMs in UML  
+- Embedded C/C++, FSMs & HSMs in UML (Microsoft Visio)  
 - SPI-based Leader-Follower Communication  
 - UART Debugging & Data Logging  
 - PID Control for Precision Motor Actuation  
@@ -38,9 +38,7 @@ SQRL is an autonomous mobile robot designed for precision object retrieval in a 
 - System Integration & Debugging (Oscilloscope, Logic Analyzer)  
 - Manual Stepper Motor Control (H-Bridge SN754410)  
 
-
 ---
-
 
 ## 👤 **My Role & Key Contributions**
 
