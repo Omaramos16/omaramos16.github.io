@@ -78,11 +78,11 @@ Click on a project to learn more!
         <a href="projects/me218c-sk.html">
             <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
             <div class="card-content">
-                <h3>Super KARLio Boat</h3>
-                <p>Wireless Communication | Real-Time Control | Interactive Sensor Design</p>
+                <h3>Super KARLio: Wireless Aquatic Robot Controller</h3>
+                <p>XBee  Communication | Real-Time Control | Interactive Sensor Design</p>
             </div>
             <div class="overlay-info">
-                NES-inspired controller for real-time wireless control of an autonomous water robot, powered by embedded C, XBee communication, and custom hardware design.
+                Wireless NES-style controller for real-time remote operation of a water robot, using embedded C, XBee communication, and custom, modular hardware design.
             </div>
         </a>
     </div>

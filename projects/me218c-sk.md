@@ -6,7 +6,7 @@ title: Super KARLio
 ## 🚀 **Project Overview**  
 - **Project Name:** Super KARLio - *Nautical Electromechanical Device for Mobile Operation (NEDMO)*  
 - **Role:** Embedded Systems & Controller Design Lead 
-- **Technologies:** Embedded C/C++, FSMs, UART, SPI, XBee (Zigbee), Analog Signal Processing, PIC32, KiCad, Fusion 360, MPLAB X  
+- **Technologies:** Embedded C, FSMs, UART, SPI, XBee (Zigbee), Analog Signal Processing, PIC32, KiCad, Fusion 360, MPLAB X  
 - **Class:** ME218C: Smart Product Design Applications (Graduate-Level Mechatronics Series)  
 - **Team Size:** 3 members  
 - **Duration:** ~3 weeks  
@@ -22,104 +22,91 @@ title: Super KARLio
 
 # **Super KARLio - *Nautical Electromechanical Device for Mobile Operation (NEDMO)***  
 
-*Super KARLio* is a Nintendo-inspired project designed to control an autonomous aquatic robot, the *0 Ingress Lightweight Uncrewed Scuttlebutt (0ILUS)*, via a custom NES-style controller (*NEDMO*). The NEDMO wirelessly communicates with the 0ILUS using XBee (Zigbee) modules for real-time control of propulsion, refueling, and water-shooting mechanisms. The system integrates embedded software, custom protoboards, analog signal processing, and retro-inspired mechanical design for an immersive, game-like experience.
+*Super KARLio* is a Nintendo-inspired embedded system that enables real-time control of an autonomous aquatic robot (*0ILUS*) via a custom-built NES-style controller (*NEDMO*). NEDMO wirelessly communicates with 0ILUS using custom XBee (Zigbee) protocols, handling propulsion, refueling, and water-shooting. The system integrates event-driven firmware, custom electrical design, analog signal processing, and retro-inspired mechanical design for an immersive, game-like experience.
+
 
 ---
 
 ## 🛠️ **Key Technologies & Concepts**  
-- Embedded C/C++ (Modular Event-Driven Architecture)  
-- Finite State Machines (FSMs) for Control & Communication  
-- UART & SPI Communication (XBee Wireless, LED Matrix Display)  
+- Embedded C (Modular Event-Driven Architecture)  
+- Finite State Machine based Control & Communication 
+- Custom UART Interrupt-Driven XBee Protocols
+- SPI Communication (LED Matrix Display)  
 - Real-Time Interrupt Handling for Low-Latency Control  
 - Analog Signal Processing (Accelerometer-Based Refueling)  
 - Power Distribution & Signal Integrity Optimization (Twisted Pairs, Decoupling Capacitors)  
-- Hardware-Software Co-Design (PIC32, KiCad)  
-- Mechanical Design (Fusion 360, 3D Printing with Bambulab)  
-- System Integration Testing (UART Logs, Oscilloscopes, Debugging Tools)  
+- Hardware-Software Co-Design (PIC32, KiCad, Fusion 360)   
+- System Debugging & Validation (Oscilloscope, UART Logs, Simulation)   
 
 ---
 
 ## 👤 **My Role & Key Contributions**  
 
 - **System Architecture:** Led the end-to-end design of NEDMO, integrating software, hardware, and mechanical systems.  
-- **Embedded Software Development:** Designed FSMs for wireless communication, joystick/button inputs, and real-time LED display management.  
-- **Wireless Communication:** Engineered UART-based XBee protocols (Zigbee) for low-latency control.  
-- **Motion-Based Refueling:** Developed an accelerometer-driven refueling mechanism with analog filtering to ensure signal stability.  
-- **Mechanical Design:** CAD-modeled NES-inspired controller and console with magnetic latches, strain relief, and retro aesthetics.  
-- **Electrical Design:** Designed custom circuits, handled power distribution, and implemented robust signal conditioning.  
-- **System Integration:** Ensured seamless hardware-software communication and modular system debugging.
+- **Embedded Software:** Designed custom FSMs for wireless control, real-time joystick inputs, and LED display management.  
+- **Wireless Communication:** Developed custom UART-based XBee protocols** for **low-latency, bidirectional control.  
+- **Motion-Based Refueling:** Built an accelerometer-driven refueling system with analog signal filtering for noise reduction.  
+- **Mechanical Design:** CAD-modeled NES-style controller and console with magnetic latches, strain relief, and retro aesthetics.  
+- **Electrical Design:** Designed custom circuits, optimized power distribution, and implemented signal conditioning for stability.  
+- **System Integration & Debugging:** Ensured seamless hardware-software communication and modular system debugging.
 
 ---
 
 ## ⚡ **Detailed Electronics Design**  
 
-As the **Embedded Systems & Controller Design Lead**, I was responsible for the electrical architecture of NEDMO, focusing on power distribution, signal conditioning, and embedded system reliability.
-
-### **FUELCON System - Base Unit**  
-- **Purpose:** Central hub for fuel management, status display, and wireless communication.  
+### **FUELCON - Base Unit & Signal Hub**  
+- **Purpose:** Manages fuel distribution, status display, and wireless communication.  
 - **Key Components:**  
-  - **MAX7219 Dot Matrix Display:** Displays communication status and active 0ILUS unit.  
-  - **270° Servo Motor:** Visual fuel indicator, driven via buffered control signals.  
-  - **Signal Conditioning:**  
-    - **Octal Buffer (74ACT244):** Steps up PIC32’s +3.3V control signals to +5V for high-current peripherals.  
-    - **Decoupling Capacitors:** Stabilize voltage near ICs to reduce noise.  
-  - **Power Distribution:** Optimized with twisted power pairs to minimize EMI and ensure clean +3.3V/+5V lines from a USB battery pack.  
+  - **MAX7219 LED Matrix:** Displays system status and active 0ILUS unit.  
+  - **270° Servo Motor:** Provides a visual fuel level indicator.  
+  - **Octal Buffer (74ACT244):** Steps up PIC32’s 3.3V control signals to 5V for high-current peripherals.  
+  - **Decoupling Capacitors:** Prevents voltage drops and EMI noise.  
+  - **Twisted-Pair Routing:** Optimized power delivery from a USB battery pack.  
 
----
-
-### **🔨 FUELCON - Hammer Refueling Mechanism**  
-- **Design:** Motion-based refueling inspired by *Super Mario Bros.*  
-- **Key Features:**  
-  - **ADXL355 ±3g Analog Accelerometer:** Detects hammer swings to trigger refueling events.  
-  - **Signal Processing:**  
-    - Analog filtering and digital moving averages to reduce noise.  
-    - Connected via JXT-XH connectors for robust signal integrity.  
-  - **Microcontroller Interface:** Accelerometer outputs wired to PIC32 analog inputs (X, Y axes).
-
----
+### **🔨 Hammer-Based Refueling Mechanism**  
+- **ADXL355 ±3g Accelerometer:** Detects hammer swings for refueling events.  
+- **Analog Filtering & Digital Moving Averages:** Stabilizes noisy sensor data.  
+- **Modular Connector Design:** Uses JXT-XH connectors for reliable signal integrity.  
 
 ### 🎮 **NAVCON - NES-Inspired Controller**  
-- **Purpose:** Real-time navigation control for the 0ILUS aquatic robot.  
-- **Key Components:**  
-  - **User Inputs:** 4 debounced buttons (160 Hz cutoff) + 2-axis joystick.  
-  - **Signal Interface:**  
-    - **DB9 Connector:** Secure modular connection to the FUELCON base with strain-relief mechanisms.  
-    - **Hardware Debouncing:** Reduces false triggers, ensuring responsive control.  
-    - **Expandability:** Reserved wiring for future button additions.
+- **Purpose:** Real-time control of the 0ILUS aquatic robot.  
+- **Key Features:**  
+  - **4 Debounced Buttons + 2-Axis Joystick:** Processed via hardware debouncing & software filtering.  
+  - **DB9 Connector:** Modular interface with strain relief for durability.  
+  - **Future Expansion:** Reserved wiring for additional control inputs.  
 
-
----
-
-## 🚩 **Key Challenges & Solutions**  
-
-✅ **Ensuring Low-Latency Wireless Communication**  
-- *Problem:* Initial XBee setup suffered **delayed responses** due to inefficient polling.  
-- *Solution:* Implemented **UART interrupt-driven transmission**, reducing **latency by ~40%**.  
-
-✅ **Mitigating Signal Noise in Accelerometer-Based Refueling**  
-- *Problem:* Raw sensor data was **highly sensitive to vibration and external motion**.  
-- *Solution:* Applied **analog filtering + digital moving averages** for stability.  
-
-✅ **Optimizing Power Distribution & Grounding**  
-- *Problem:* Early iterations **suffered from voltage fluctuations** affecting servo stability.  
-- *Solution:* Used **decoupling capacitors + twisted-pair routing** to **reduce EMI & voltage dips**.  
-
-✅ **Mechanical Durability & Controller Usability**  
-- *Problem:* Early prototypes lacked **strain relief**, leading to **wiring failures under stress**.  
-- *Solution:* **Redesigned wiring with reinforced DB9 connectors** and **built-in strain relief**.  
-
----
-
-## 🌟 **Project Highlights**  
-✔ **End-to-End Embedded System:** Designed **firmware, communication protocols, and hardware integration**.  
-✔ **Low-Latency Wireless Control:** Achieved **responsive bidirectional communication** with **interrupt-based UART XBee protocols**.  
-✔ **Analog Signal Processing for Motion-Based Input:** Built a **real-time accelerometer-driven refueling mechanism**.  
-✔ **Cross-Disciplinary Engineering:** Balanced **embedded design, wireless protocols, and mechanical integration**.  
 
 
 ---
 
-## 💡 **Reflection & Lessons Learned**  
+## 🚩 Key Engineering Challenges & Solutions  
+
+- **Ensuring Seamless Cross-Team Compatibility**  
+  - *Challenge:* Every controller needed to control any team's boat via a standardized pairing protocol, requiring robust communication across independently designed systems.  
+  - *Solution:* Designed a flexible UART-based pairing system, ensuring universal compatibility while collaborating with other teams to refine communication protocols.  
+
+- **Designing for Frequent Handling & Transport**  
+  - *Challenge:* The system needed to be repeatedly transported between test environments, and project requirements mandated that all components remain in separate physical enclosures.  
+  - *Solution:* Integrated detachable DB9 connectors with built-in strain relief, ensuring durability and ease of reconfiguration during testing and usage.  
+
+
+- **Managing Mixed-Voltage Components & Power Stability**  
+  - *Challenge:* The system contained both 5V and 3.3V logic-level components, requiring careful integration to prevent signal integrity issues. Additionally, a single power source had to drive motors, LED displays, logic circuits, sensors, and inputs, making noise isolation and voltage stability critical.  
+  - *Solution:* Used buffers (74ACT244) for logic-level shifting and designed a regulated power distribution system with decoupling capacitors, twisted-pair routing, and proper grounding techniques to minimize noise and ensure stable operation across all subsystems.  
+
+---
+
+## 🌟 Project Highlights  
+- Developed a real-time embedded system with custom UART-based Zigbee communication.  
+- Integrated multi-MCU control for wireless navigation, refueling, and status displays.  
+- Designed a stable power system for mixed-voltage components and noise reduction.  
+- Improved accelerometer-based refueling with hardware and software filtering.  
+- Used DB9 connectors with strain relief for durability and easy reconfiguration.  
+- Ensured cross-team compatibility with a flexible controller pairing system.  
+
+---
+
+## 💡 Reflection & Lessons Learned  
 
 Working on *Super KARLio* was an immersive experience in embedded systems, real-time communication, and hardware-software co-design. Leading NEDMO’s development taught me the importance of modular architectures, robust protocols, and balancing technical performance with user-centric design.
 
