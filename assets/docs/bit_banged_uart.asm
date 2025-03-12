@@ -15,10 +15,10 @@
 ; This include file pulls in the proper definitions for the registers for this processor   
 #include <xc.inc>
 	
-; This PSECT command specifies that we want to locate variables in Bank0   
+; This PSECT command specifies locating variables in Bank0   
     PSECT   udata_bank0
 
-; We make them GLOBAL to help the debugger find them, that's all
+; Make them GLOBAL to help the debugger find them, that's all
     GLOBAL  TR_BYTE_REG, TR_COUNTER, DONE_TR_FLAG, RX_RECEIVE_REG, RX_COUNTER, DONE_RX_FLAG
 ; Transmit Variables
 TR_BYTE_REG:	    DS  1   ; Reserve 1 byte for data
