@@ -127,10 +127,10 @@ Click on a project to learn more!
             <img src="/assets/images/uart_assembly/uart_assembly.png" alt="Bit-Banged UART Thumbnail">
             <div class="card-content">
                 <h3>Bit-Banged UART</h3>
-                <p>Assembly Language | Full-Duplex UART | Interrupt-Driven RX</p>
+                <p>Embedded Assembly | Software UART | Interrupt-Driven Communication</p>
             </div>
             <div class="overlay-info">
-                Implemented full-duplex UART in assembly on a PIC10F322, featuring bit-banged transmission, interrupt-driven reception, and precise baud rate control using an NCO.
+                Implemented a software-based UART in assembly on a PIC10F322, featuring bit-banged TX, interrupt-driven RX, and precise baud timing using an NCO.
             </div>
         </a>
     </div>

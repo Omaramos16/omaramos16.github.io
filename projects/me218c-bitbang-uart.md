@@ -8,67 +8,46 @@ title: Bit-Banged UART in Assembly
 - **Technologies:** Assembly, Software UART, Interrupt-Driven Communication, PIC10F322, MPLAB X  
 - **Key Focus:** Developing a fully software-implemented UART on a microcontroller without built-in UART hardware, requiring precise bit-banging transmission and interrupt-driven reception.
 - **Class:** ME218C: Smart Product Design Applications  
+- **📜 Full Source Code:** You can view the complete source code [here](../assets/docs/bit_banged_uart.asm).
 
 ---
 
 ## 📖 **Project Description**  
 
-This project implements a **software-based UART (bit-banged)** entirely in assembly on a **PIC10F322**, a microcontroller **without built-in UART hardware**. Using **precise instruction timing and interrupt-driven reception**, the system reliably transmits and receives **ASCII characters at 2400 baud**.  
- 
-✔ **Bit-banged TX:** Manually generates start, data, and stop bits via software.  
-✔ **Interrupt-driven RX:** Detects incoming data via edge interrupts and samples at **1.5 bit-time intervals**.  
-✔ **Uses a Numerically Controlled Oscillator (NCO) for baud rate timing.**  
-✔ **Receives, processes, and retransmits ASCII serial data in real-time**, demonstrating full-duplex communication handling entirely in software. 
+Developed a software UART on a PIC10F322 (a microcontroller without hardware UART) using precise bit-banging for transmission and interrupt-driven reception. The system reliably transmits and receives ASCII characters at 2400 baud, using a Numerically Controlled Oscillator (NCO) for timing and Timer interrupts for accurate sampling. Received characters are echoed back in uppercase.
 
 ---
 
 ## 🛠️ **Key Technologies & Implementation Details**  
 
-- **Microcontroller:** **PIC10F322 (8-bit, 256 bytes RAM, 512 words Flash)**  
-- **Programming Language:** **Microchip PIC Assembly (MPASM, Mid-Range 8-bit Architecture)**  
-- **Baud Rate:** **2400 baud, 8-N-1 (8 data bits, no parity, 1 stop bit)**  
-- **Transmission Method:**  
-  - Uses **an NCO (Numerically Controlled Oscillator) to generate the baud clock**.  
-  - Each bit is manually written to the TX pin at the correct timing.  
-- **Reception Method:**  
-  - **Interrupt-on-Change (IOC) detects start bit.**  
-  - **Timer2 interrupt samples** the middle of each bit period.  
-  - Assembles received bits into a byte and **echoes it back** in uppercase.  
+- **Microcontroller:** PIC10F322 (8-bit, No Hardware UART)
+- **Programming Language:** Microchip PIC Assembly (MPASM, Mid-Range 8-bit Architecture)  
+- **Baud Rate:** 2400 baud, 8-N-1 (8 data bits, no parity, 1 stop bit) 
+- **Transmission**: Bit-banged output using NCO-driven (Numerically Controlled Oscillator) timing. Each bit is manually written to the TX pin at the correct timing.  
+- **Reception:**  
+  - Interrupt-on-Change (IOC) detects start bit.  
+  - Timer2 interrupt samples at 1.5 bit-times to assemble data.
+  - Characters are echoed back in uppercase.
 
 ---
 
-## 🚩 **Key Challenges & Solutions**  
-
-- **🔄 Implementing Precise Timing for Bit-Banged Transmission**  
-  - *Challenge:* Timing must be **exact** to match the 2400 baud rate.  
-  - *Solution:* Used a **Numerically Controlled Oscillator (NCO)** to generate **precise interrupts** for each bit.  
-
-- **⚡ Ensuring Reliable Reception Without a Hardware UART Buffer**  
-  - *Challenge:* Reading bits at the **wrong moment** could result in corrupted data.  
-  - *Solution:* Used a **1.5 bit-time sampling strategy** via **Timer2 interrupts** to read bits at the correct moment.  
-
-- **🛠️ Validating UART Timing and Synchronization Using a Logic Analyzer**  
-  - *Challenge:* No hardware UART means no printf debugging.  
-  - *Solution:* Used a **logic analyzer** to validate TX waveform & verify timing accuracy.  
+### 🚩 Key Challenges & Solutions  
+- **Precise Timing for Bit-Banged Transmission** → Used **NCO** to generate stable baud timing.  
+- **Reliable Reception Without a Hardware UART** → Implemented **interrupt-based sampling** for accurate data capture.  
+- **Debugging Without a UART Buffer** → Used a **logic analyzer** to verify waveform accuracy.  
 
 ---
 
-## 🧰 **Technical Stack & Validation**  
-
-- **Microcontroller:** **PIC10F322 (No Hardware UART, 8-bit RISC)**  
-- **Programming:** **Assembly (MPASM, MPLAB X IDE)**  
-- **Communication Method:** **Bit-Banged TX & Interrupt-Driven RX**  
-- **Baud Rate Control:** **Numerically Controlled Oscillator (NCO) for precise timing**  
-- **Testing Tools:** **Logic Analyzer for waveform validation**  
-- **Performance:** Successfully transmitted, received, & echoed ASCII characters over **2400 baud serial**  
+### 🧰 Technical Stack & Validation  
+✔ **Bit-banged TX & Interrupt-driven RX** for full software UART.  
+✔ **Validated UART timing & synchronization** using a **logic analyzer**.  
+✔ **Successfully transmitted & received ASCII data** at 2400 baud.  
 
 ---
 
-## 🌟 **Project Highlights**  
-
-✔ **Implemented Full Software-Based UART** on a microcontroller without hardware UART.  
-✔ **Low-Level Embedded Programming in Assembly** with precise bit-timing control.  
-✔ **Interrupt-Driven Reception Handling** for accurate serial data decoding.  
-✔ **Successfully Transmitted & Received ASCII Data** at 2400 baud.  
+### 🌟 Project Highlights  
+✔ **Implemented Full Software UART on Hardware-Limited MCU**  
+✔ **Low-Level Embedded Programming in Assembly**  
+✔ **Precise Timing Control with NCO & Timer Interrupts**  
 
 ---
