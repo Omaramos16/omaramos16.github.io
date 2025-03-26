@@ -58,7 +58,7 @@ This project was part of *CS225A: Experimental Robotics*, where we developed a *
 - Managed scene assets, transformations, and dynamic camera adjustments.  
 - Implemented strike zone visualization and real-time ball tracking.  
 
-- **Physics-Based Ball Tracking & Strike Detection**  
+**Physics-Based Ball Tracking & Strike Detection**  
 - Computed gravity-based trajectory intersections to determine if a pitch entered the strike zone.  
 - Dynamically adjusted camera view based on whether the ball hit or missed.  
 

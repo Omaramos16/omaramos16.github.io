@@ -44,7 +44,7 @@ title: Super KARLio
 
 - **System Architecture:** Led the end-to-end design of NEDMO, integrating software, hardware, and mechanical systems.  
 - **Embedded Software:** Designed custom FSMs for wireless control, real-time joystick inputs, and LED display management.  
-- **Wireless Communication:** Developed custom UART-based XBee protocols** for **low-latency, bidirectional control.  
+- **Wireless Communication:** Developed custom UART-based XBee protocols for low-latency, bidirectional control.  
 - **Motion-Based Refueling:** Built an accelerometer-driven refueling system with analog signal filtering for noise reduction.  
 - **Mechanical Design:** CAD-modeled NES-style controller and console with magnetic latches, strain relief, and retro aesthetics.  
 - **Electrical Design:** Designed custom circuits, optimized power distribution, and implemented signal conditioning for stability.  
