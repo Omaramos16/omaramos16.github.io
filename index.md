@@ -6,16 +6,13 @@ title: Omar Ramos Escoto
 
 # Omar Ramos Escoto  <!-- omit in toc -->
 
-### 🚀 Embedded Systems \| Robotics \| Hardware-Software Integration 🚀   <!-- omit in toc -->
+### 🚀 Systems & Mechatronics Engineer | Embedded Systems & Robotics 🚀   <!-- omit in toc -->
 
-I’m a **Stanford M.S./B.S. graduate in Mechanical Engineering & Computer Science with expertise in embedded systems, robotics, and real-time software**. My work focuses on integrating firmware, hardware, and control systems for sensor-driven and electromechanical applications, with a strong background in system architecture, communication protocols, and embedded validation.
-
-**I’m looking for opportunities in embedded systems, robotics, and hardware/software co-design**, where I can contribute to firmware development, system integration, and intelligent automation. If you’re working on exciting projects in these areas, I’d love to connect!
+I’m a **Systems & Mechatronics Engineer** and Stanford M.S./B.S. alumnus specializing in electromechanical systems, low-level firmware, and hardware-software integration. My work bridges mechanical design, real-time control, and embedded firmware for sensor-driven applications in robotics, mechatronics, and intelligent automation.
 
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
   <a href="https://linkedin.com/in/omarramosescoto/" target="_blank" rel="noopener noreferrer" class="contact-button">💼 LinkedIn</a>
-  <a href="https://drive.google.com/file/d/{{ site.google_drive_resume }}/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-button">📄 View My Resume</a>
 </div>
 
 <br />  
@@ -176,7 +173,7 @@ Click on a project to learn more!
             <div class="card-content">
             <h3>Morse Code Decoder</h3>
             <p>Infrared Signal Processing | Hardware Abstraction | Software Modularity</p>
-            </div>
+          </div>
             <div class="overlay-info">
             Real-time Morse Code decoding system using an IR sensor, self-calibrating finite state machine, and SPI-controlled LED matrix for scrolling text output.
             </div>
@@ -482,20 +479,15 @@ Click on a project to learn more!
 <div id="about"></div> 
 # 🏆 About Me  
 
-I pride myself in being a generalist. Whether it’s writing low-level firmware, designing circuits, mechanical design, or optimizing AI-driven systems, I enjoy tackling every step of the process. For me, engineering isn’t just about solving problems—it’s about finding (or creating) interesting ones to solve.  
+I pride myself on being a generalist. Whether it’s writing low-level firmware, designing circuits, building physical enclosures, or optimizing control systems, I enjoy tackling every layer of the hardware-software stack. For me, engineering is about solving intricate problems and bringing complex designs from concept to reality.  
 
-Beyond engineering, I’m passionate about teaching and mentorship. I’ve taught AI/ML to high school students through [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provided engineering and math tutoring through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, completing hundreds of hours of instruction with a 5-star rating. At Stanford, I helped organize hands-on workshops, foster technical communities, and support first-generation students in STEM like myself.  
+Beyond engineering, I’m deeply passionate about teaching and mentorship. I’ve taught AI/ML to students through [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provided technical instruction through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, logging hundreds of hours of 5-star instruction. At Stanford, I actively supported hands-on workshops and fostered technical communities for first-generation students in STEM.  
 
-When I’m not building things, you’ll probably find me playing guitar, reading, hiking, or kicking a soccer ball around.  
+When I’m not building things, you’ll usually find me playing guitar, reading, hiking, or kicking a soccer ball around.  
 
 <div class="image-container">
   <img src="assets/images/personal_pic1.JPG" alt="Personal Picture">
 </div>
 
-If you’re working on something exciting in robotics, embedded systems, or hardware/software integration, I’d love to connect!  
-
 📩 **Email:** [ramos16@alumni.stanford.edu](mailto:ramos16@alumni.stanford.edu){:target="_blank"}  
-💼 **LinkedIn:** [linkedin.com/in/omarramosescoto/](https://linkedin.com/in/omarramosescoto/){:target="_blank"}  
-
-🚀 **Let’s connect and build something amazing!**  
- 
+💼 **LinkedIn:** [linkedin.com/in/omarramosescoto/](https://linkedin.com/in/omarramosescoto/){:target="_blank"}

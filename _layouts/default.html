@@ -22,32 +22,16 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <!-- 🔹 Navigation Menu -->
-        <!-- <nav class="nav-menu">
-          <ul>
-            <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
-            <li><a href="{{ '/projects/' | relative_url }}">🔧 Projects</a></li>
-            <li><a href="{{ '/coursework/' | relative_url }}">📚 Technical Skills & Coursework</a></li>
-            <li><a href="{{ '/resume/' | relative_url }}">📄 Resume</a></li>
-          </ul>
-        </nav> -->
-
         <nav class="nav-links">
           {% if page.url == "/" %}
-            <!-- ✅ We're on the home page, so show all section buttons -->
             <a href="#top" class="nav-button">🏠 Home</a>
             <a href="#skills" class="nav-button">🧑‍💻 Technical Skills</a>
             <a href="#projects" class="nav-button">🛠 Projects</a>
             <a href="#coursework" class="nav-button">📚 Education & Coursework</a>
             <a href="#about" class="nav-button">📝 About Me</a>
           {% else %}
-            <!-- 🚀 We're NOT on the home page, so show "Back to Projects" -->
             <a href="/#projects" class="nav-button">⬅️ Back to Projects</a>
           {% endif %}
-        
-          <!-- 📄 Resume link stays the same everywhere -->
-          <a href="https://drive.google.com/file/d/{{ site.google_drive_resume }}/view?usp=sharing" 
-             class="nav-button" target="_blank" rel="noopener noreferrer">📄 Download Resume</a>
         </nav>
         
               
