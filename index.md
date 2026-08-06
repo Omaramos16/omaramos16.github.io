@@ -6,9 +6,9 @@ title: Omar Ramos Escoto
 
 # Omar Ramos Escoto  <!-- omit in toc -->
 
-### 🚀 Systems & Mechatronics Engineer | Embedded Systems & Robotics 🚀   <!-- omit in toc -->
+### Embedded Systems, Mechatronics & Robotics Engineer   <!-- omit in toc -->
 
-I’m a **Systems & Mechatronics Engineer** and Stanford M.S./B.S. alumnus specializing in electromechanical systems, low-level firmware, and hardware-software integration. My work bridges mechanical design, real-time control, and embedded firmware for sensor-driven applications in robotics, mechatronics, and intelligent automation.
+I’m an **Embedded Systems & Mechatronics Engineer** and Stanford M.S./B.S. alumnus specializing in real-time firmware, low-level hardware-software integration, and electromechanical design. My work bridges bare-metal control, sensor-driven architectures, and physical prototyping to build reliable, high-performance systems for robotics and intelligent automation.
 
 <div class="contact-buttons">
   <a href="mailto:ramos16@alumni.stanford.edu" class="contact-button">📩 Email Me</a>
@@ -17,16 +17,16 @@ I’m a **Systems & Mechatronics Engineer** and Stanford M.S./B.S. alumnus speci
 
 <br />  
 
-### 🔗 Jump To:
+### Jump To:
 
-- [🧑‍💻 Technical Skills](#-technical-skills)
-- [🛠 Projects](#-projects)
-  - [🔌 Embedded Systems and Electro-Mechanical Projects](#-embedded-systems-and-electro-mechanical-projects)
-  - [🤖 Software, AI, and Machine Learning Projects](#-software-ai-and-machine-learning-projects)
-  - [⚙️ Mechanical Systems Design and Fabrication Projects](#️-mechanical-systems-design-and-fabrication-projects)
-- [📖 Education](#-education)
-- [📚 Relevant Coursework](#-relevant-coursework)
-- [🏆 About Me](#-about-me)
+- [Technical Skills](#skills)
+- [Projects](#projects)
+  - [Embedded Systems & Electromechanical](#embedded-projects)
+  - [Software, AI & Robotics](#software-projects)
+  - [Mechanical Design & Fabrication](#mechanical-projects)
+- [Education](#coursework)
+- [Relevant Coursework](#relevant-coursework)
+- [About Me](#about)
 
 <br />
 
@@ -34,27 +34,28 @@ I’m a **Systems & Mechatronics Engineer** and Stanford M.S./B.S. alumnus speci
 <div id="skills"></div> 
 <br/>
 
-# 🧑‍💻 Technical Skills  
-**Programming & Software**  
-- Embedded C (PIC32, ARM Cortex, STM32), C++, Python, MATLAB, Verilog  
-- ROS, PyBullet, SAI2 Framework, OpenCV, PyTorch
-- Version Control: Git, GitHub, Bitbucket
-- Linux Systems, Multi-Threaded Programming, Real-Time Signal Processing
+# 🧑‍💻 Technical Skills
 
-**Embedded Systems & Digital Design**  
-- Microcontrollers (PIC, ARM, STM32, ESP32), FPGA Design (Verilog, Finite State Machines) 
-- Schematic Design (KiCad), Circuit Debugging, PCB Prototyping
-- Peripheral Interfaces: SPI, I2C, I2S, UART, Bluetooth, ZigBee, RF 
+**Embedded Firmware & Systems**
+- **Languages:** Embedded C, C++, Python, MATLAB, Assembly, Shell Scripting, Verilog
+- **Architectures & RTOS:** Bare-Metal Firmware, Event-Driven Architectures (HSM), FreeRTOS, Linux Systems
+- **Microcontrollers & Processors:** ARM Cortex-M (STM32), PIC32, ESP32, AVR, FPGAs
+- **Protocols & Interfaces:** SPI, I2C, I2S, UART, BLE, Zigbee, RF, SER/DES
 
-**Robotics & Control Systems**  
-- PID Control, Sensor Fusion, State Estimation
-- Motion Planning, Perception-Based Control, Haptic Systems
-- Simulation & Modeling (PyBullet, SAI2, Gazebo)  
+**Software, Vision & Tooling**
+- **Image & Data Processing:** Image Signal Processing (ISP), Computer Vision (OpenCV), Real-Time Data Pipelines, Real-Time Signal Processing
+- **Robotics & AI Frameworks:** ROS, PyBullet, SAI2, PyTorch, TensorFlow, Gazebo
+- **DevOps & Workflow:** Git, GitHub, Bitbucket, Azure DevOps, Jira, Agile/Scrum, Static Analysis, Unit Testing
 
-**Mechanical Design & Prototyping**  
-- CAD (Fusion 360, SolidWorks), FEA, Structural Analysis  
-- Rapid Prototyping (3D Printing, Machining, Sandcasting)  
-- Mechanical System Design, Product Realization, Design for Additive Manufacturing  
+**Validation, Hardware & Debugging**
+- **Hardware Debugging:** Oscilloscopes, Logic Analyzers, Digital Multimeters, Circuit Debugging, Signal Integrity
+- **Testing & Quality:** HIL/SIL Testing, Python Fault Injection, Thermal Chamber Profiling, Root-Cause Analysis
+- **Requirements & Systems:** IBM DOORS, Requirements Writing & Traceability, System Specifications, ISO 26262 Concepts
+
+**Robotics, Control & Mechanical Design**
+- **Robotics & Control:** PID Tuning, Sensor Fusion, State Estimation, Motion Planning, Haptic Rendering, Perception Control
+- **PCB & Hardware Prototyping:** Schematic Capture & PCB Layout (KiCad), Breadboarding, Power Distribution
+- **CAD & Fabrication:** SOLIDWORKS, Fusion 360, OnShape, Structural FEA, Additive Manufacturing (3D Printing), Machining, GD&T
 <br/>
 
 ---
@@ -68,6 +69,8 @@ This is a selected collection of projects spanning embedded systems, robotics, A
 Click on a project to learn more!  
 
 
+<div id="embedded-projects"></div>
+
 ## 🔌 Embedded Systems and Electro-Mechanical Projects
 
 <div class="project-grid">
@@ -76,7 +79,7 @@ Click on a project to learn more!
             <img src="/assets/images/nedmo/nedmo-oilus-home.jpg" alt="Mario Boat Project Thumbnail">
             <div class="card-content">
                 <h3>Super KARLio: Wireless Aquatic Robot Controller</h3>
-                <p>XBee  Communication | Real-Time Control | Interactive Sensor Design</p>
+                <p>XBee Communication | Real-Time Control | Interactive Sensor Design</p>
             </div>
             <div class="overlay-info">
                 Wireless NES-style controller for real-time remote operation of a water robot, using embedded C, XBee communication, and custom, modular hardware design.
@@ -171,17 +174,19 @@ Click on a project to learn more!
         <a href="projects/me218a-morse-code.html">
             <img src="/assets/images/me218a-morse-decoder/morse-decoder-main.jpg" alt="Morse Code Decoder Thumbnail">
             <div class="card-content">
-            <h3>Morse Code Decoder</h3>
-            <p>Infrared Signal Processing | Hardware Abstraction | Software Modularity</p>
-          </div>
+                <h3>Morse Code Decoder</h3>
+                <p>Infrared Signal Processing | Hardware Abstraction | Software Modularity</p>
+            </div>
             <div class="overlay-info">
-            Real-time Morse Code decoding system using an IR sensor, self-calibrating finite state machine, and SPI-controlled LED matrix for scrolling text output.
+                Real-time Morse Code decoding system using an IR sensor, self-calibrating finite state machine, and SPI-controlled LED matrix for scrolling text output.
             </div>
         </a>
     </div>
 </div>
 
 ---
+
+<div id="software-projects"></div>
 
 ## 🤖 Software, AI, and Machine Learning Projects
 
@@ -206,8 +211,7 @@ Click on a project to learn more!
                 <p>Deep Learning | Computer Vision | PyBullet Simulation</p>
             </div>
             <div class="overlay-info">
-                Developed a grasp detection model using affordance learning & pose estimation,
-                improving robotic grasp success in PyBullet simulations.
+                Developed a grasp detection model using affordance learning & pose estimation, improving robotic grasp success in PyBullet simulations.
             </div>
         </a>
     </div>
@@ -219,8 +223,7 @@ Click on a project to learn more!
                 <p>FPGA | MIPS Processor | Multi-Threading | NEON SIMD</p>
             </div>
             <div class="overlay-info">
-                Designed a custom processor & FPGA accelerator to optimize image processing.
-                Implemented multi-threading, vectorization, and pipeline optimizations for real-time performance.
+                Designed a custom processor & FPGA accelerator to optimize image processing. Implemented multi-threading, vectorization, and pipeline optimizations for real-time performance.
             </div>
         </a>
     </div>
@@ -251,6 +254,8 @@ Click on a project to learn more!
 </div>
 
 ---
+
+<div id="mechanical-projects"></div>
 
 ## ⚙️ Mechanical Systems Design and Fabrication Projects
 
@@ -330,7 +335,6 @@ Click on a project to learn more!
 </div>
 <br/>
 
-
 ---
 
 <div id="coursework"></div> 
@@ -349,6 +353,8 @@ Click on a project to learn more!
 ---
 
 <br/>
+
+<div id="relevant-coursework"></div>
 
 # 📚 Relevant Coursework  
 
@@ -479,9 +485,9 @@ Click on a project to learn more!
 <div id="about"></div> 
 # 🏆 About Me  
 
-I pride myself on being a generalist. Whether it’s writing low-level firmware, designing circuits, building physical enclosures, or optimizing control systems, I enjoy tackling every layer of the hardware-software stack. For me, engineering is about solving intricate problems and bringing complex designs from concept to reality.  
+I pride myself on being a cross-disciplinary engineer who thrives at the intersection of hardware and software. Whether it’s writing low-level firmware, analyzing sensor data, designing custom circuits, or building physical enclosures, I enjoy tackling every layer of the electromechanical stack to bring complex designs from concept to reality.
 
-Beyond engineering, I’m deeply passionate about teaching and mentorship. I’ve taught AI/ML to students through [Inspirit AI](https://www.inspiritai.com/){:target="_blank"} and provided technical instruction through [Tutorfly](https://www.tutorfly.com/u/oramosescoto1/){:target="_blank"}, logging hundreds of hours of 5-star instruction. At Stanford, I actively supported hands-on workshops and fostered technical communities for first-generation students in STEM.  
+Teaching and technical mentorship have also been central to my journey. Through platforms like Inspirit AI or Tutorfly, I’ve logged thousands of hours mentoring students in math, programming, and machine learning fundamentals. At Stanford, I actively supported hands-on workshops and technical communities for first-generation students in STEM.
 
 When I’m not building things, you’ll usually find me playing guitar, reading, hiking, or kicking a soccer ball around.  
 
